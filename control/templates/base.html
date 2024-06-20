@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}JyMCleanning{% endblock %}</title>
+    
+    <link rel="stylesheet" href={% static '/estilos.css' %}>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <table class="header-table">
+                <tr>
+                    <td class="icon">
+                        <!--{% static 'images/icon.png' %}-->
+                        <img id="header-icon" src="{% static 'img/icons/icon-Jym.png' %}" >
+                    </td>
+                    <td>
+                        <!-- onclick="location.href='{{ url }}'" -->
+                        <nav>
+                            <ul class="nav-menu">
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Acerca de</a></li>
+                                <li><a href="#">Servicios</a></li>
+                                <li><a href="#">Contacto</a></li>
+                                <li><a href="#">Ayuda</a></li>
+                            </ul>
+                        </nav>
+                    </td>
+                </tr>
+            </table>
+        </header>
+    
+        <main>
+            {% block content %}
+            <!-- Contenido -->
+            {% endblock %}
+        </main>
+
+
+        <!-- Form User-->
+        <!--
+        <div class="form-container">
+            <h2>Dejanos tu mensaje!</h2>
+            <form action="#" method="post">
+                
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
+                
+                
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                
+                
+                <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+                
+                
+                <textarea id="message" name="message" rows="4" placeholder="Mensaje" required></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        -->
+        
+
+
+
+        <!-- Fin Form User-->
+    
+        <footer>
+            <nav class="navbar">
+                <table class="nav-table">
+                    <tr>
+                        <td class="menu-container">
+                            <ul class="custom-menu">
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Acerca de</a></li>
+                                <li><a href="#">Servicios</a></li>
+                                <li><a href="#">Contacto</a></li>
+                                <li><a href="#">Ayuda</a></li>
+                            </ul>
+                        </td>
+                        <td class="contact-info">
+                            <p>Tel: +123 456 7890</p>
+                            <p>Email: contacto@example.com</p>
+                        </td>
+                    </tr>
+                </table>
+            </nav>
+            <p>© 2024 JyMCleanning Oficial web</p>
+        </footer>
+    </div>
+</body>
+</html>
