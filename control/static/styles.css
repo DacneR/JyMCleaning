@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(img/backgrounds/background0.png);
+    background-image: url(img/backgrounds/background1.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -36,8 +36,10 @@ header {
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
+    float: right;
+
 }
 
 .icon img {
@@ -93,6 +95,44 @@ nav {
     transform: scale(1.5); /* Agranda el botón a 1.5 veces su tamaño original */
 
 }
+/*-----------------------Clases------------------------------------*/
+.cajonD{
+    background-color: #ffffff;
+    margin: 30px;
+    color: #141414;
+    padding: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.ban{
+    margin-top: 15px;
+}
+/*-----------------------Tabla menu------------------------------------*/
+.tabla-menu {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px; /* Espacio entre las celdas */
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.tabla-menu td {
+    padding: 20px;
+    text-align: center;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animación suave para el efecto hover */
+}
+
+.tabla-menu td:hover {
+    transform: scale(1.05); /* Agranda un poco la celda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra */
+}
+/*-----------------------Tabla menu------------------------------------*/
+
+/*-----------------------Fin Clases------------------------------------*/
 
 /*-----------------------Form------------------------------------*/
 /* Contenedor del formulario */
