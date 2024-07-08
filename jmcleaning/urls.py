@@ -20,5 +20,7 @@ from control import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home')
+    path('', views.home, name='home'),
+    path('acerca/', views.cerca, name='cerca'),
+    path('servicios/', views.servicios, name='servicios')
 ]
