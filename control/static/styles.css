@@ -108,6 +108,19 @@ nav {
 .ban{
     margin-top: 15px;
 }
+
+.imgD{
+    width: 350px;
+    height: 350px;
+    float: right;
+}
+
+.hD{
+    float: left;
+    display: block;
+}
+
+
 /*-----------------------Tabla menu------------------------------------*/
 .tabla-menu {
     width: 100%;
@@ -150,13 +163,10 @@ nav {
     text-align: center;
     background-color: #e0e0e0;
     border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Animación suave para el efecto hover */
+   
 }
 
-.tablaD td:hover {
-    transform: scale(1); /* Agranda un poco la celda */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra */
-}
+
 /*-----------------------Tabla D------------------------------------*/
 
 /*-----------------------Fin Clases------------------------------------*/

@@ -5,8 +5,12 @@
 
 {% block content %}
 <center>
-    <img class="ban" src="{% static 'img/banners/ban.png' %}" >
-    
+
+    <!--Banner principal-->
+    <img class="ban" title="" src="{% static 'img/banners/ban.png' %}" >
+    <!--Banner principal-->
+
+    <!--Primer presentación-->
     <div class="cajonD">
         <p>
             En nuestra empresa, nos dedicamos a ofrecer los mejores servicios de limpieza para satisfacer todas sus necesidades. 
@@ -18,6 +22,9 @@
         <img class="icon" src="{% static 'img/icons/icon-Jym.png' %}" >
         
     </div>
+    <!--Primer presentación-->
+
+    <!--tabla promociones-->
     <table class="tabla-menu">
         <tr>
             <td>
@@ -43,7 +50,47 @@
             </td>
         </tr>
     </table>
+    <!--tabla promociones-->
 
+    <!--casos limpieza-->
+    <div class="cajonD">
+        <h2>¡Remueve todas esas manchas!</h2>
+        <table class="tablaD">
+            <tr>
+                <td>
+                    <h2 class="hD">■ Revive el color original de tu alfombra.</h2>
+                    <h2 class="hD">■ Cuidado profesional para tus alfombras.</h2>
+                    <h2 class="hD">■ Servicio a domicilio conveniente y asequible.</h2>
+                    <h2 class="hD">■ Tecnología avanzada para manchas rebeldes.</h2> 
+                </td>
+                <td><img class="imgD" src="{% static 'img/principal/alfombraMan.jpg' %}" ></td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 class="hD">■ Eliminamos pelos de mascotas y residuos sin esfuerzo.</h2>
+                    <h2 class="hD">■ Deshacemos las manchas de alimentos en tus muebles.</h2>
+                    <h2 class="hD">■ Limpieza profunda, eliminamos manchas de mascotas y olores.</h2>
+                    <h2 class="hD">■ Restauramos muebles dañados por intentos de limpieza con trapos.</h2> 
+                </td>
+                <td><img class="imgD" src="{% static 'img/principal/mueble.png' %}" ></td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 class="hD">■ Eliminamos eficazmente manchas difíciles para dejar tu colchón como nuevo.</h2>
+                    <h2 class="hD">■ Nuestro proceso de lavado elimina ácaros y pulgas, asegurando un ambiente más saludable.</h2>
+                    <h2 class="hD">■ Removemos olores persistentes de tu colchón para que puedas dormir fresco y tranquilo.</h2>
+                    <h2 class="hD">■ Protegemos tu salud y bienestar al mantener tus colchones libres de alérgenos y microorganismos.</h2> 
+                </td>
+                <td><img class="imgD" src="{% static 'img/principal/colchon.jpg' %}" ></td>
+            </tr>
+        </table>
+    </div>
+    
+    
+    
+    <!--casos limpieza-->
+
+    <!--contactanos-->
     <div id="contact" class="cajonD">
         <h2>Contactanos!</h2>
         <p>
@@ -59,6 +106,7 @@
         
         
     </div>
+    <!--contactanos-->
 </center>
 
 {% endblock %}

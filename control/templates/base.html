@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}JyMCleanning{% endblock %}</title>
     
-    <link rel="stylesheet" href={% static '/estilos.css' %}>
+    <link rel="stylesheet" href={% static '/styles.css' %}>
+    <link rel="icon" href="{% static 'img/icons/icon.png' %}" type="image/x-icon">
 </head>
 <body>
     <div class="wrapper">
@@ -15,7 +16,7 @@
                 <tr>
                     <td class="icon">
                         <!--{% static 'images/icon.png' %}-->
-                        <img id="header-icon" src="{% static 'img/icons/icon-Jym.png' %}" >
+                        <img id="header-icon" title="JyMCleanning" src="{% static 'img/icons/icon.png' %}" >
                     </td>
                     <td>
                         <!-- onclick="location.href='{{ url }}'" -->
@@ -87,7 +88,9 @@
                     </tr>
                 </table>
             </nav>
-            <p>© 2024 JyMCleanning Oficial web</p>
+            <p>   
+                © 2024 JyMCleanning es una marca registrada y tiene Todos los derechos reservados, Oficial web. 
+            </p>
         </footer>
     </div>
 </body>
