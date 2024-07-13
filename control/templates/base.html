@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}JyMCleanning{% endblock %}</title>
+    <title>{% block title %}JyMDCleanning{% endblock %}</title>
     
     <link rel="stylesheet" href={% static '/styles.css' %}>
     <link rel="icon" href="{% static 'img/icons/icon.png' %}" type="image/x-icon">
 </head>
 <body>
+    <script src="{% static 'java.js' %}"></script>
     <div class="wrapper">
         <header>
             <table class="header-table">
@@ -26,7 +27,8 @@
                                 <li><a href="/acerca">Acerca de</a></li>
                                 <li><a href="/servicios">Servicios</a></li>
                                 <li><a href="{% url 'home' %}#contact">Contacto</a></li>
-                                <li><a href="#">Ayuda</a></li>
+                                <li><a href="/terminos">Términos y condiciones</a></li>
+                                <li><a href="#">Traducir</a></li>
                             </ul>
                         </nav>
                     </td>
@@ -74,11 +76,11 @@
                     <tr>
                         <td class="menu-container">
                             <ul class="custom-menu">
-                                <li><a href="#">Inicio</a></li>
-                                <li><a href="#">Acerca de</a></li>
-                                <li><a href="#">Servicios</a></li>
-                                <li><a href="#">Contacto</a></li>
-                                <li><a href="#">Ayuda</a></li>
+                                <li><a href="/">Inicio</a></li>
+                                <li><a href="/acerca">Acerca de</a></li>
+                                <li><a href="/servicios">Servicios</a></li>
+                                <li><a href="{% url 'home' %}#contact">Contacto</a></li>
+                                <li><a href="/terminos">Términos y condiciones</a></li>
                             </ul>
                         </td>
                         <td class="contact-info">

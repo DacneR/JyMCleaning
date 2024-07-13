@@ -12,3 +12,6 @@ def cerca(request):
 
 def servicios(request):
     return render(request, 'servicios.html')
+
+def terminos(request):
+    return render(request, 'terminos.html')
