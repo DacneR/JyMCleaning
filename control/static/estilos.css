@@ -96,6 +96,11 @@ nav {
 
 }
 /*-----------------------Clases------------------------------------*/
+.ban{
+    margin-top: 15px;
+    
+}
+
 .cajonD{
     background-color: #ffffff;
     margin: 30px;
@@ -105,10 +110,22 @@ nav {
     overflow: hidden;
 }
 
-.ban{
-    margin-top: 15px;
+.hD{
+    margin: 10px 0;
+    display: block;
+    font-size: 15px;
+
+}
+
+.hR{
+    max-width: 500px;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #2e9aff, #1e00ff);
+    margin: 150px;
     
 }
+
 
 .imgD{
     width: 350px;
@@ -116,12 +133,11 @@ nav {
     float: right;
 }
 
-.hD{
-    margin: 10px 0;
-    display: block;
-    font-size: 15px;
-
+.pD{
+    max-width: 300px;
 }
+
+
 
 
 /*-----------------------Tabla menu------------------------------------*/
