@@ -42,6 +42,15 @@ header {
 
 }
 
+.icon0 {
+    width: 50px;
+    height: 50px;
+    float: left;
+    
+    
+
+}
+
 .icon img {
     width: auto; /* Ajusta el tamaño de la imagen al 100% de la celda contenedora */
     height: auto; /* Mantén la proporción de la imagen */
@@ -110,6 +119,15 @@ nav {
     overflow: hidden;
 }
 
+.cajonD0{
+    background-color: #ffffff;
+    margin: 5px;
+    color: #141414;
+    padding: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 .hD{
     margin: 10px 0;
     display: block;
@@ -122,7 +140,18 @@ nav {
     border: none;
     height: 2px;
     background: linear-gradient(to right, #2e9aff, #1e00ff);
-    margin: 150px;
+    margin: 150px auto;
+    
+    
+}
+
+.hR1{
+    max-width: 500px;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #2e9aff, #1e00ff);
+    margin: 50px auto;
+    
     
 }
 
@@ -137,6 +166,10 @@ nav {
     max-width: 300px;
 }
 
+.pD0{
+    float: left;
+    max-width: 250px;
+}
 
 
 
