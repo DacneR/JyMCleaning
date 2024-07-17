@@ -10,7 +10,7 @@
     <link rel="icon" href="{% static 'img/icons/icon0.png' %}" type="image/x-icon">
 </head>
 <body>
-    <script src="{% static 'java.js' %}"></script>
+    
     
     <div class="wrapper">
         <header>
@@ -22,16 +22,29 @@
                     </td>
                     <td>
                         <!-- onclick="location.href='{{ url }}'" -->
-                        <nav>
-                            <ul class="nav-menu">
-                                <li><a href="/">Inicio</a></li>
-                                <li><a href="/acerca">Acerca de</a></li>
-                                <li><a href="/servicios">Servicios</a></li>
-                                <li><a href="{% url 'home' %}#contact">Contacto</a></li>
-                                <li><a href="/terminos">Términos y condiciones</a></li>
-                                <li><a href="#">Traducir</a></li>
-                            </ul>
-                        </nav>
+                        {% if language == 'en' %}
+                            <nav>
+                                <ul class="nav-menu">
+                                    <li><a href="/" id="ini">Start</a></li>
+                                    <li><a href="/acerca">About us</a></li>
+                                    <li><a href="/servicios">Service</a></li>
+                                    <li><a href="{% url 'home' %}#contact">Contact</a></li>
+                                    <li><a href="/terminos">Terms and Conditions</a></li>
+                                    <li><a href="{% url 'change_language' %}">Translate</a></li>
+                                </ul>
+                            </nav>
+                        {% else %}
+                            <nav>
+                                <ul class="nav-menu">
+                                    <li><a href="/" id="ini">Inicio</a></li>
+                                    <li><a href="/acerca">Acerca de</a></li>
+                                    <li><a href="/servicios">Servicios</a></li>
+                                    <li><a href="{% url 'home' %}#contact">Contacto</a></li>
+                                    <li><a href="/terminos">Términos y condiciones</a></li>
+                                    <li><a href="{% url 'change_language' %}">Traducir</a></li>
+                                </ul>
+                            </nav>
+                        {% endif %}
                     </td>
                 </tr>
             </table>
@@ -70,30 +83,58 @@
 
 
         <!-- Fin Form User-->
-    
-        <footer>
-            <nav class="navbar">
-                <table class="nav-table">
-                    <tr>
-                        <td class="menu-container">
-                            <ul class="custom-menu">
-                                <li><a href="/">Inicio</a></li>
-                                <li><a href="/acerca">Acerca de</a></li>
-                                <li><a href="/servicios">Servicios</a></li>
-                                <li><a href="{% url 'home' %}#contact">Contacto</a></li>
-                                <li><a href="/terminos">Términos y condiciones</a></li>
-                            </ul>
-                        </td>
-                        <td class="contact-info">
-                            <img id="header-icon" class="icon" title="JyMCleanning" src="{% static 'img/icons/icon0.png' %}" >
-                        </td>
-                    </tr>
-                </table>
-            </nav>
-            <p>   
-                © 2024 JyMCleanning es una marca registrada y tiene Todos los derechos reservados, Oficial web. 
-            </p>
-        </footer>
+        
+            <footer>
+                {% if language == 'en' %}
+                    <nav class="navbar">
+                        <table class="nav-table">
+                            <tr>
+                                <td class="menu-container">
+                                    <ul class="custom-menu">
+                                        <li><a href="/">Start</a></li>
+                                        <li><a href="/acerca">About us</a></li>
+                                        <li><a href="/servicios">Service</a></li>
+                                        <li><a href="{% url 'home' %}#contact">Contact</a></li>
+                                        <li><a href="/terminos">Terms and conditions</a></li>
+                                    </ul>
+                                </td>
+                                <td class="contact-info">
+                                    <img id="header-icon" class="icon" title="JyMCleanning" src="{% static 'img/icons/icon0.png' %}" >
+                                </td>
+                            </tr>
+                        </table>
+                    </nav>
+                    <p>   
+                        © 2024 J&MD Cleaning is a registered trademark and has All rights reserved, Official website.
+                    </p>
+                {% else %}
+                    <nav class="navbar">
+                        <table class="nav-table">
+                            <tr>
+                                <td class="menu-container">
+                                    <ul class="custom-menu">
+                                        <li><a href="/">Inicio</a></li>
+                                        <li><a href="/acerca">Acerca de</a></li>
+                                        <li><a href="/servicios">Servicios</a></li>
+                                        <li><a href="{% url 'home' %}#contact">Contacto</a></li>
+                                        <li><a href="/terminos">Términos y condiciones</a></li>
+                                    </ul>
+                                </td>
+                                <td class="contact-info">
+                                    <img id="header-icon" class="icon" title="JyMCleanning" src="{% static 'img/icons/icon0.png' %}" >
+                                </td>
+                            </tr>
+                        </table>
+                    </nav>
+                    <p>   
+                        © 2024 JyMCleanning es una marca registrada y tiene Todos los derechos reservados, Oficial web. 
+                    </p>
+                {% endif %}
+            </footer>
+        
+            
+
+        
     </div>
 </body>
 </html>

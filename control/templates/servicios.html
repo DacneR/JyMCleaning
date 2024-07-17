@@ -4,89 +4,175 @@
 {% block title %}Servicios - JyMCleanning{% endblock %}
 
 {% block content %}
-    <div class="cajonD">
-        <h1 style="text-align: center;">Nuestros servicios!</h1>
-
-            <hr class="hR1">
-
-        <!--Tabla Servicios -->
-
+    {% if language == 'en' %}
+        <div id="content-en">
             <div class="cajonD">
-                <h2>Lavado de Alfombras, ¡Devuelva la vida a sus alfombras con nuestro lavado profesional!</h2>
-                <table class="tablaD">
-                    <tr>
-                        <td>
-                            <img class="imgD" src="{% static 'img/servicios/alfombras.png' %}" >
-                        </td>
-                        <td>
-                            Nuestra experiencia de más de 20 años nos permite ofrecer un servicio de lavado de 
-                            alfombras que elimina hasta las manchas más rebeldes sin dañar el material. Utilizamos productos y técnicas avanzadas que 
-                            restauran el color y la textura original de su alfombra, dejándola como nueva.
-                        </td>
-                    </tr>
-                </table>
-
+                <h1 style="text-align: center;">Our Services!</h1>
+            
+                <hr class="hR1">
+            
+                <!-- Services Table -->
+            
+                <div class="cajonD">
+                    <h2>Carpet Cleaning, Bring your carpets back to life with our professional cleaning!</h2>
+                    <table class="tablaD">
+                        <tr>
+                            <td>
+                                <img class="imgD" src="{% static 'img/servicios/alfombras.png' %}" >
+                            </td>
+                            <td>
+                                Our experience of over 20 years allows us to offer a carpet cleaning service that removes even the toughest stains without damaging the material. We use advanced products and techniques that restore the original color and texture of your carpet, leaving it like new.
+                            </td>
+                        </tr>
+                    </table>
+            
                     <br>
-
-                <h2>Lavado de Muebles, ¡Confíe en nosotros para renovar sus muebles y mantenerlos impecables!</h2>
-                <table class="tablaD">
-                    <tr>
-                        <td>
-                            <img class="imgD" src="{% static 'img/servicios/muebles.png' %}" >
-                        </td>
-                        <td>
-                            Nos especializamos en la limpieza profunda de muebles, eliminando manchas, pelos de mascotas y residuos difíciles. Nuestros 
-                            productos no solo limpian, sino que también protegen y prolongan la vida útil de sus muebles, devolviéndoles su apariencia y 
-                            comodidad original.
-                        </td>
-                    </tr>
-                </table>
-
+            
+                    <h2>Furniture Cleaning, Trust us to renew your furniture and keep it spotless!</h2>
+                    <table class="tablaD">
+                        <tr>
+                            <td>
+                                <img class="imgD" src="{% static 'img/servicios/muebles.png' %}" >
+                            </td>
+                            <td>
+                                We specialize in deep cleaning of furniture, removing stains, pet hair, and difficult residues. Our products not only clean but also protect and prolong the life of your furniture, restoring its original appearance and comfort.
+                            </td>
+                        </tr>
+                    </table>
+            
                     <br>
-
-                <h2>Lavado de Colchones, ¡Disfrute de un sueño reparador con nuestros servicios de limpieza de colchones!</h2>
-                <table class="tablaD">
-                    <tr>
-                        <td>
-                            <img class="imgD" src="{% static 'img/servicios/colchones.png' %}" >
-                        </td>
-                        <td>
-                            Un colchón limpio es esencial para un buen descanso. Ofrecemos un servicio de limpieza de colchones que elimina ácaros, pulgas, manchas 
-                            y olores, garantizando un ambiente higiénico y saludable para usted y su familia.
-                        </td>
-                    </tr>
-                </table>
-
+            
+                    <h2>Mattress Cleaning, Enjoy a restful sleep with our mattress cleaning services!</h2>
+                    <table class="tablaD">
+                        <tr>
+                            <td>
+                                <img class="imgD" src="{% static 'img/servicios/colchones.png' %}" >
+                            </td>
+                            <td>
+                                A clean mattress is essential for good sleep. We offer a mattress cleaning service that removes mites, fleas, stains, and odors, ensuring a hygienic and healthy environment for you and your family.
+                            </td>
+                        </tr>
+                    </table>
+            
                     <br>
-
-                <h2>Lavado de Cortinas, ¡Renueve la apariencia de sus cortinas con nuestro cuidado experto!</h2>
-                <table class="tablaD">
-                    <tr>
-                        <td>
-                            <img class="imgD" src="{% static 'img/servicios/cortinas.png' %}" >
-                        </td>
-                        <td>
-                            Las cortinas son un elemento clave en la decoración del hogar. Nuestro servicio de lavado de cortinas elimina polvo, 
-                            manchas y olores, devolviendo a sus cortinas su frescura y belleza original sin dañarlas.
-                        </td>
-                    </tr>
-                </table>
-
+            
+                    <h2>Curtain Cleaning, Refresh the look of your curtains with our expert care!</h2>
+                    <table class="tablaD">
+                        <tr>
+                            <td>
+                                <img class="imgD" src="{% static 'img/servicios/cortinas.png' %}" >
+                            </td>
+                            <td>
+                                Curtains are a key element in home decor. Our curtain cleaning service removes dust, stains, and odors, restoring the freshness and original beauty of your curtains without damaging them.
+                            </td>
+                        </tr>
+                    </table>
+            
                     <br>
+            
+                    <h2>Home Cleaning, Let us do the hard work and enjoy a sparkling home!</h2>
+                    <table class="tablaD">
+                        <tr>
+                            <td>
+                                <img class="imgD" src="{% static 'img/servicios/hogar.png' %}" >
+                            </td>
+                            <td>
+                                We offer a comprehensive home cleaning service that covers all your cleaning needs. From the kitchen to the bathrooms, our team ensures your home is spotless and welcoming, using high-quality products and efficient techniques.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>            
+        </div>
+    {% else %}
+        <div id="content-es">
+            <div class="cajonD">
+                <h1 style="text-align: center;">Nuestros servicios!</h1>
 
-                <h2>Aseo en el Hogar, ¡Déjenos hacer el trabajo duro y disfrute de un hogar reluciente!</h2>
-                <table class="tablaD">
-                    <tr>
-                        <td>
-                            <img class="imgD" src="{% static 'img/servicios/hogar.png' %}" >
-                        </td>
-                        <td>
-                            Ofrecemos un servicio integral de aseo en el hogar que cubre todas sus necesidades de limpieza. Desde la cocina hasta los baños, 
-                            nuestro equipo se encarga de dejar su hogar impecable y acogedor, utilizando productos de alta calidad y técnicas eficientes.
-                        </td>
-                    </tr>
-                </table>
+                <hr class="hR1">
+
+                <!--Tabla Servicios -->
+
+                <div class="cajonD">
+                    <h2>Lavado de Alfombras, ¡Devuelva la vida a sus alfombras con nuestro lavado profesional!</h2>
+                    <table class="tablaD">
+                        <tr>
+                            <td>
+                                <img class="imgD" src="{% static 'img/servicios/alfombras.png' %}" >
+                            </td>
+                            <td>
+                                Nuestra experiencia de más de 20 años nos permite ofrecer un servicio de lavado de 
+                                alfombras que elimina hasta las manchas más rebeldes sin dañar el material. Utilizamos productos y técnicas avanzadas que 
+                                restauran el color y la textura original de su alfombra, dejándola como nueva.
+                            </td>
+                        </tr>
+                    </table>
+
+                        <br>
+
+                    <h2>Lavado de Muebles, ¡Confíe en nosotros para renovar sus muebles y mantenerlos impecables!</h2>
+                    <table class="tablaD">
+                        <tr>
+                            <td>
+                                <img class="imgD" src="{% static 'img/servicios/muebles.png' %}" >
+                            </td>
+                            <td>
+                                Nos especializamos en la limpieza profunda de muebles, eliminando manchas, pelos de mascotas y residuos difíciles. Nuestros 
+                                productos no solo limpian, sino que también protegen y prolongan la vida útil de sus muebles, devolviéndoles su apariencia y 
+                                comodidad original.
+                            </td>
+                        </tr>
+                    </table>
+
+                        <br>
+
+                    <h2>Lavado de Colchones, ¡Disfrute de un sueño reparador con nuestros servicios de limpieza de colchones!</h2>
+                    <table class="tablaD">
+                        <tr>
+                            <td>
+                                <img class="imgD" src="{% static 'img/servicios/colchones.png' %}" >
+                            </td>
+                            <td>
+                                Un colchón limpio es esencial para un buen descanso. Ofrecemos un servicio de limpieza de colchones que elimina ácaros, pulgas, manchas 
+                                y olores, garantizando un ambiente higiénico y saludable para usted y su familia.
+                            </td>
+                        </tr>
+                    </table>
+
+                        <br>
+
+                    <h2>Lavado de Cortinas, ¡Renueve la apariencia de sus cortinas con nuestro cuidado experto!</h2>
+                    <table class="tablaD">
+                        <tr>
+                            <td>
+                                <img class="imgD" src="{% static 'img/servicios/cortinas.png' %}" >
+                            </td>
+                            <td>
+                                Las cortinas son un elemento clave en la decoración del hogar. Nuestro servicio de lavado de cortinas elimina polvo, 
+                                manchas y olores, devolviendo a sus cortinas su frescura y belleza original sin dañarlas.
+                            </td>
+                        </tr>
+                    </table>
+
+                        <br>
+
+                    <h2>Aseo en el Hogar, ¡Déjenos hacer el trabajo duro y disfrute de un hogar reluciente!</h2>
+                    <table class="tablaD">
+                        <tr>
+                            <td>
+                                <img class="imgD" src="{% static 'img/servicios/hogar.png' %}" >
+                            </td>
+                            <td>
+                                Ofrecemos un servicio integral de aseo en el hogar que cubre todas sus necesidades de limpieza. Desde la cocina hasta los baños, 
+                                nuestro equipo se encarga de dejar su hogar impecable y acogedor, utilizando productos de alta calidad y técnicas eficientes.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
+        </div>
+    {% endif %}
+    
         
                 
             

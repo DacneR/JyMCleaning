@@ -27,3 +27,4 @@ function showSlides() {
     // Reiniciar el intervalo para cambiar de slide cada 5 segundos
     slideInterval = setTimeout(showSlides, 5000); 
 }
+

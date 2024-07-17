@@ -23,5 +23,6 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('acerca/', views.cerca, name='cerca'),
     path('servicios/', views.servicios, name='servicios'),
-    path('terminos/', views.terminos, name='terminos')
+    path('terminos/', views.terminos, name='terminos'),
+    path('change_language/', views.change_language, name='change_language')
 ]

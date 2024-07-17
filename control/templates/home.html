@@ -5,157 +5,316 @@
 
 {% block content %}
 <center>
-
-    <!--Banner principal-->
-    <a href="#contact"><img class="ban" title="J&MDCleanning - Contactanos!"  src="{% static 'img/banners/ban.png' %}" ></a>
+    <script src="{% static 'java.js' %}"></script>
     
-    <!--Banner principal-->
+    {% if language == 'en' %}
+        <div id="content-en">
+                    <!--Main Banner-->
+            <a href="#contact"><img class="ban" title="J&MDCleaning - Contact Us!" src="{% static 'img/banners/ban-en.png' %}" ></a>
+            <!--Main Banner-->
 
-    <!--Primer presentación-->
-    <div class="cajonD">
-        <p>
-            En nuestra empresa, nos dedicamos a ofrecer los mejores servicios de limpieza para satisfacer todas sus necesidades. 
-            Limpiamos alfombras, colchones, muebles, sillones, comedores y todo tipo de acolchados con la mayor dedicación y profesionalismo. 
-            Con más de 20 años de experiencia en el lavado y cuidado de textiles, nuestro equipo de profesionales garantiza resultados 
-            impecables y un ambiente limpio y saludable para su hogar o negocio. Utilizamos técnicas y productos de alta calidad para asegurar que cada 
-            rincón de sus espacios luzca como nuevo. Confíe en nosotros para mantener sus espacios en las mejores condiciones posibles.
-        </p>
-        <img class="icon" src="{% static 'img/icons/icon0.png' %}" >
-        
-    </div>
-    <!--Primer presentación-->
-
-    <!--tabla promociones-->
-    <table class="tabla-menu">
-        <tr>
-            <td>
-                <h2>Promoción 1: Paquete Hogar Impecable</h2>
+            <!--First Presentation-->
+            <div class="cajonD">
                 <p>
-                    Incluye limpieza de alfombras, tapetes y muebles. Obtenga un 20% de descuento al contratar la limpieza de estos tres servicios juntos. 
-                    Ideal para mantener su hogar en las mejores condiciones y disfrutar de un ambiente fresco y limpio.
+                    In our company, we are dedicated to offering the best cleaning services to meet all your needs. 
+                    We clean carpets, mattresses, furniture, sofas, dining rooms, and all kinds of upholstery with the utmost dedication and professionalism. 
+                    With over 20 years of experience in washing and caring for textiles, our team of professionals guarantees impeccable results 
+                    and a clean and healthy environment for your home or business. We use high-quality techniques and products to ensure that every 
+                    corner of your spaces looks like new. Trust us to keep your spaces in the best possible condition.
                 </p>
-            </td>
-            <td>
-                <h2>Promoción 2: Descuento de Bienvenida</h2>
-                <p>
-                    Si es la primera vez que utiliza nuestros servicios, le ofrecemos un 15% de descuento en la limpieza de colchones y sillones. 
-                    Confíe en nuestro equipo profesional con más de 20 años de experiencia para brindarle resultados impecables desde el primer servicio.
-                </p>
-            </td>
-            <td>
-                <h2>Promoción 3: Servicio Empresarial</h2>
-                <p>
-                    Contrate la limpieza mensual de todos sus espacios de oficina, incluyendo alfombras, muebles y comedores, y reciba un 25% de descuento en el primer mes. 
-                    Mantenga su ambiente de trabajo limpio y saludable con nuestro servicio especializado y regular.
-                </p>
-            </td>
-        </tr>
-    </table>
-    <!--tabla promociones-->
+                <img class="icon" src="{% static 'img/icons/icon0.png' %}" >
+            </div>
+            <!--First Presentation-->
 
-    <!--casos limpieza-->
-    <div class="cajonD">
-        <h2>¡Remueve todas esas manchas!</h2>
-        <table class="tablaD">
-            <tr>
-                <td>
-                    <h2 class="hD">■ Revive el color original de tu alfombra.</h2>
-                    <h2 class="hD">■ Cuidado profesional para tus alfombras.</h2>
-                    <h2 class="hD">■ Servicio a domicilio conveniente y asequible.</h2>
-                    <h2 class="hD">■ Tecnología avanzada para manchas rebeldes.</h2> 
-                </td>
-                <td><img class="imgD" src="{% static 'img/principal/alfombraMan.jpg' %}" ></td>
-            </tr>
-            <tr>
-                <td>
-                    <h2 class="hD">■ Eliminamos pelos de mascotas y residuos sin esfuerzo.</h2>
-                    <h2 class="hD">■ Deshacemos las manchas de alimentos en tus muebles.</h2>
-                    <h2 class="hD">■ Limpieza profunda, eliminamos manchas de mascotas y olores.</h2>
-                    <h2 class="hD">■ Restauramos muebles dañados por intentos de limpieza con trapos.</h2> 
-                </td>
-                <td><img class="imgD" src="{% static 'img/principal/mueble.png' %}" ></td>
-            </tr>
-            <tr>
-                <td>
-                    <h2 class="hD">■ Eliminamos eficazmente manchas difíciles para dejar tu colchón como nuevo.</h2>
-                    <h2 class="hD">■ Nuestro proceso de lavado elimina ácaros y pulgas, asegurando un ambiente más saludable.</h2>
-                    <h2 class="hD">■ Removemos olores persistentes de tu colchón para que puedas dormir fresco y tranquilo.</h2>
-                    <h2 class="hD">■ Protegemos tu salud y bienestar al mantener tus colchones libres de alérgenos y microorganismos.</h2> 
-                </td>
-                <td><img class="imgD" src="{% static 'img/principal/colcho.jpg' %}" ></td>
-            </tr>
-        </table>
-    </div>
-    <!--casos limpieza-->
+            <!--Promotions Table-->
+            <table class="tabla-menu">
+                <tr>
+                    <td>
+                        <h2>Promotion 1: Impeccable Home Package</h2>
+                        <p>
+                            Includes carpet, rug, and furniture cleaning. Get a 20% discount when you hire these three services together. 
+                            Ideal for keeping your home in top condition and enjoying a fresh and clean environment.
+                        </p>
+                    </td>
+                    <td>
+                        <h2>Promotion 2: Welcome Discount</h2>
+                        <p>
+                            If it is your first time using our services, we offer a 15% discount on mattress and sofa cleaning. 
+                            Trust our professional team with over 20 years of experience to provide you with impeccable results from the first service.
+                        </p>
+                    </td>
+                    <td>
+                        <h2>Promotion 3: Business Service</h2>
+                        <p>
+                            Hire the monthly cleaning of all your office spaces, including carpets, furniture, and dining rooms, and receive a 25% discount in the first month. 
+                            Keep your work environment clean and healthy with our specialized and regular service.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <!--Promotions Table-->
 
-    <!--Carrusel-->
-    <div class="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="{% static 'img/usuarios/usuario0.png' %}" alt="User Photo" class="user-photo">
-                <div class="review-content">
-                    <h3 class="user-name">Horacio Restrepo</h3>
-                    <p class="user-message">¡Excelente servicio! Quedé muy satisfecho con la limpieza de mis alfombras. ¡Lo recomiendo!</p>
-                    <p class="user-rating">Calificación: ★★★★</p>
+            <!--Cleaning Cases-->
+            <div class="cajonD">
+                <h2>Remove All Those Stains!</h2>
+                <table class="tablaD">
+                    <tr>
+                        <td>
+                            <h2 class="hD">■ Revive the original color of your carpet.</h2>
+                            <h2 class="hD">■ Professional care for your carpets.</h2>
+                            <h2 class="hD">■ Convenient and affordable home service.</h2>
+                            <h2 class="hD">■ Advanced technology for stubborn stains.</h2> 
+                        </td>
+                        <td><img class="imgD" src="{% static 'img/principal/alfombraMan.jpg' %}" ></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 class="hD">■ We effortlessly remove pet hair and residues.</h2>
+                            <h2 class="hD">■ We remove food stains from your furniture.</h2>
+                            <h2 class="hD">■ Deep cleaning, we remove pet stains and odors.</h2>
+                            <h2 class="hD">■ We restore furniture damaged by cleaning attempts with rags.</h2> 
+                        </td>
+                        <td><img class="imgD" src="{% static 'img/principal/mueble.png' %}" ></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 class="hD">■ We effectively remove difficult stains to leave your mattress looking like new.</h2>
+                            <h2 class="hD">■ Our washing process removes mites and fleas, ensuring a healthier environment.</h2>
+                            <h2 class="hD">■ We remove persistent odors from your mattress so you can sleep fresh and peacefully.</h2>
+                            <h2 class="hD">■ We protect your health and well-being by keeping your mattresses free of allergens and microorganisms.</h2> 
+                        </td>
+                        <td><img class="imgD" src="{% static 'img/principal/colcho.jpg' %}" ></td>
+                    </tr>
+                </table>
+            </div>
+            <!--Cleaning Cases-->
+
+            <!--Carousel-->
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'img/usuarios/usuario0.png' %}" alt="User Photo" class="user-photo">
+                        <div class="review-content">
+                            <h3 class="user-name">Horacio Restrepo</h3>
+                            <p class="user-message">Excellent service! I was very satisfied with the cleaning of my carpets. I recommend it!</p>
+                            <p class="user-rating">Rating: ★★★★</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/usuarios/usuario1.png' %}" alt="User Photo" class="user-photo">
+                        <div class="review-content">
+                            <h3 class="user-name">Juliana Mojica</h3>
+                            <p class="user-message">Great job. My furniture looks like new. Highly recommended!</p>
+                            <p class="user-rating">Rating: ★★★★★</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/usuarios/usuario2.png' %}" alt="User Photo" class="user-photo">
+                        <div class="review-content">
+                            <h3 class="user-name">Marcela Orozco</h3>
+                            <p class="user-message">Professional and efficient! They removed all the stains from my mattresses.</p>
+                            <p class="user-rating">Rating: ★★★★</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="{% static 'img/usuarios/usuario1.png' %}" alt="User Photo" class="user-photo">
-                <div class="review-content">
-                    <h3 class="user-name">Juliana Mojica</h3>
-                    <p class="user-message">Gran trabajo. Mis muebles quedaron como nuevos. ¡Muy recomendado!</p>
-                    <p class="user-rating">Calificación: ★★★★★</p>
+            <!--Carousel-->
+
+            <div class="cajonD">
+                <h2>Terms and Conditions</h2>
+                <p>At J&MDCleaning, we are committed to providing professional cleaning services with over 20 years of experience. 
+                    By using our services, you agree to our terms and conditions, including the cancellation policy and responsible handling of 
+                    your personal data. We protect your information and use it only to improve our offer. For more details, consult our 
+                    full terms.
+                </p>
+            </div>
+
+            <!--Contact Us-->
+            <div id="contact" class="cajonD">
+                <h2>Contact Us!</h2>
+                <div class="cajonD0">
+                    <img class="icon0" src="{% static 'img/icons/correo.png' %}" >
+                    <p class="pD0">
+                        Jmdcleaning@gmail.com
+                    </p>
+                </div>
+                <br>
+                <div class="cajonD0">
+                    <img class="icon0" src="{% static 'img/icons/what.png' %}" >
+                    <p class="pD0">
+                        12345689101
+                    </p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="{% static 'img/usuarios/usuario2.png' %}" alt="User Photo" class="user-photo">
-                <div class="review-content">
-                    <h3 class="user-name">Marcela Orozco</h3>
-                    <p class="user-message">¡Profesionales y eficientes! Eliminaron todas las manchas de mis colchones.</p>
-                    <p class="user-rating">Calificación: ★★★★</p>
+            <!--Contact Us-->
+
+        </div>
+        <!--Ingles-->
+
+        
+    {% else %}
+
+
+        <!--ESpañol-->
+        <div id="content-es">
+            <!--Banner principal-->
+            <a href="#contact"><img class="ban" title="J&MDCleanning - Contactanos!"  src="{% static 'img/banners/ban-es.png' %}" ></a>
+            
+            <!--Banner principal-->
+
+            <!--Primer presentación-->
+            <div class="cajonD">
+                <p>
+                    En nuestra empresa, nos dedicamos a ofrecer los mejores servicios de limpieza para satisfacer todas sus necesidades. 
+                    Limpiamos alfombras, colchones, muebles, sillones, comedores y todo tipo de acolchados con la mayor dedicación y profesionalismo. 
+                    Con más de 20 años de experiencia en el lavado y cuidado de textiles, nuestro equipo de profesionales garantiza resultados 
+                    impecables y un ambiente limpio y saludable para su hogar o negocio. Utilizamos técnicas y productos de alta calidad para asegurar que cada 
+                    rincón de sus espacios luzca como nuevo. Confíe en nosotros para mantener sus espacios en las mejores condiciones posibles.
+                </p>
+                <img class="icon" src="{% static 'img/icons/icon0.png' %}" >
+                
+            </div>
+            <!--Primer presentación-->
+
+            <!--tabla promociones-->
+            <table class="tabla-menu">
+                <tr>
+                    <td>
+                        <h2>Promoción 1: Paquete Hogar Impecable</h2>
+                        <p>
+                            Incluye limpieza de alfombras, tapetes y muebles. Obtenga un 20% de descuento al contratar la limpieza de estos tres servicios juntos. 
+                            Ideal para mantener su hogar en las mejores condiciones y disfrutar de un ambiente fresco y limpio.
+                        </p>
+                    </td>
+                    <td>
+                        <h2>Promoción 2: Descuento de Bienvenida</h2>
+                        <p>
+                            Si es la primera vez que utiliza nuestros servicios, le ofrecemos un 15% de descuento en la limpieza de colchones y sillones. 
+                            Confíe en nuestro equipo profesional con más de 20 años de experiencia para brindarle resultados impecables desde el primer servicio.
+                        </p>
+                    </td>
+                    <td>
+                        <h2>Promoción 3: Servicio Empresarial</h2>
+                        <p>
+                            Contrate la limpieza mensual de todos sus espacios de oficina, incluyendo alfombras, muebles y comedores, y reciba un 25% de descuento en el primer mes. 
+                            Mantenga su ambiente de trabajo limpio y saludable con nuestro servicio especializado y regular.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <!--tabla promociones-->
+
+            <!--casos limpieza-->
+            <div class="cajonD">
+                <h2>¡Remueve todas esas manchas!</h2>
+                <table class="tablaD">
+                    <tr>
+                        <td>
+                            <h2 class="hD">■ Revive el color original de tu alfombra.</h2>
+                            <h2 class="hD">■ Cuidado profesional para tus alfombras.</h2>
+                            <h2 class="hD">■ Servicio a domicilio conveniente y asequible.</h2>
+                            <h2 class="hD">■ Tecnología avanzada para manchas rebeldes.</h2> 
+                        </td>
+                        <td><img class="imgD" src="{% static 'img/principal/alfombraMan.jpg' %}" ></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 class="hD">■ Eliminamos pelos de mascotas y residuos sin esfuerzo.</h2>
+                            <h2 class="hD">■ Deshacemos las manchas de alimentos en tus muebles.</h2>
+                            <h2 class="hD">■ Limpieza profunda, eliminamos manchas de mascotas y olores.</h2>
+                            <h2 class="hD">■ Restauramos muebles dañados por intentos de limpieza con trapos.</h2> 
+                        </td>
+                        <td><img class="imgD" src="{% static 'img/principal/mueble.png' %}" ></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 class="hD">■ Eliminamos eficazmente manchas difíciles para dejar tu colchón como nuevo.</h2>
+                            <h2 class="hD">■ Nuestro proceso de lavado elimina ácaros y pulgas, asegurando un ambiente más saludable.</h2>
+                            <h2 class="hD">■ Removemos olores persistentes de tu colchón para que puedas dormir fresco y tranquilo.</h2>
+                            <h2 class="hD">■ Protegemos tu salud y bienestar al mantener tus colchones libres de alérgenos y microorganismos.</h2> 
+                        </td>
+                        <td><img class="imgD" src="{% static 'img/principal/colcho.jpg' %}" ></td>
+                    </tr>
+                </table>
+            </div>
+            <!--casos limpieza-->
+
+            <!--Carrusel-->
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'img/usuarios/usuario0.png' %}" alt="User Photo" class="user-photo">
+                        <div class="review-content">
+                            <h3 class="user-name">Horacio Restrepo</h3>
+                            <p class="user-message">¡Excelente servicio! Quedé muy satisfecho con la limpieza de mis alfombras. ¡Lo recomiendo!</p>
+                            <p class="user-rating">Calificación: ★★★★</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/usuarios/usuario1.png' %}" alt="User Photo" class="user-photo">
+                        <div class="review-content">
+                            <h3 class="user-name">Juliana Mojica</h3>
+                            <p class="user-message">Gran trabajo. Mis muebles quedaron como nuevos. ¡Muy recomendado!</p>
+                            <p class="user-rating">Calificación: ★★★★★</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/usuarios/usuario2.png' %}" alt="User Photo" class="user-photo">
+                        <div class="review-content">
+                            <h3 class="user-name">Marcela Orozco</h3>
+                            <p class="user-message">¡Profesionales y eficientes! Eliminaron todas las manchas de mis colchones.</p>
+                            <p class="user-rating">Calificación: ★★★★</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
+            <!--Carrusel-->
+            <div class="cajonD">
+                <h2>Términos y condiciones</h2>
+                <p>En J&MDCleaning nos comprometemos a ofrecer servicios de limpieza profesional con más de 20 años de experiencia. 
+                    Al usar nuestros servicios, aceptas nuestros términos y condiciones, incluyendo la política de cancelaciones y el tratamiento responsable de 
+                    tus datos personales. Protegemos tu información y la utilizamos únicamente para mejorar nuestra oferta. Para más detalles, consulta nuestros 
+                    términos completos.
+                </p>
+            </div>
+
+
+
+            <!--contactanos-->
+            <div id="contact" class="cajonD">
+                <h2>Contactanos!</h2>
+                <div class="cajonD0">
+                    <img class="icon0" src="{% static 'img/icons/correo.png' %}" >
+                    <p class="pD0">
+                        Jmdcleaning@gmail.com
+                    </p>
+                </div>
+                
+                
+
+                    <br>
+
+                <div class="cajonD0">
+                    <img class="icon0" src="{% static 'img/icons/what.png' %}" >
+                    <p class="pD0">
+                        12345689101
+                    </p>
+                </div>
+                
+            </div>
         </div>
-        <div class="carousel-indicators">
-            <span class="dot active" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    </div>
-    <!--Carrusel-->
-    <div class="cajonD">
-        <h2>Términos y condiciones</h2>
-        <p>En J&MDCleaning nos comprometemos a ofrecer servicios de limpieza profesional con más de 20 años de experiencia. 
-            Al usar nuestros servicios, aceptas nuestros términos y condiciones, incluyendo la política de cancelaciones y el tratamiento responsable de 
-            tus datos personales. Protegemos tu información y la utilizamos únicamente para mejorar nuestra oferta. Para más detalles, consulta nuestros 
-            términos completos.
-        </p>
-    </div>
-
-
-
-    <!--contactanos-->
-    <div id="contact" class="cajonD">
-        <h2>Contactanos!</h2>
-        <div class="cajonD0">
-            <img class="icon0" src="{% static 'img/icons/correo.png' %}" >
-            <p class="pD0">
-                Jmdcleaning@gmail.com
-            </p>
-        </div>
-        
-        
-
-            <br>
-
-        <div class="cajonD0">
-            <img class="icon0" src="{% static 'img/icons/what.png' %}" >
-            <p class="pD0">
-                12345689101
-            </p>
-        </div>
-        
-    </div>
+    {% endif %}
+    
     <!--contactanos-->
 </center>
 
