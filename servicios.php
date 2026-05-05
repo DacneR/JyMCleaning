@@ -1,9 +1,4 @@
-<?php
-// ===================== CONFIGURACIÓN =====================
-$language = isset($_GET['lang']) && $_GET['lang'] === 'en' ? 'en' : 'es';
-$static = "assets/";
-$pageTitle = ($language == 'en') ? 'Services - J&MDCleaning' : 'Servicios - J&MDCleaning';
-?>
+<?php require_once 'translations.php'; ?>
 
 <!DOCTYPE html>
 <html lang="<?= $language ?>" class="scroll-smooth">
