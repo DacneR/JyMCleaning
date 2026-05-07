@@ -18,7 +18,7 @@
 
             <!-- Logo -->
             <div class="flex-shrink-0">
-                <img title="J&MDCleanning" src="<?= $static ?>img/icons/icon0.png" class="h-16 w-auto invert opacity-80 hover:opacity-100 transition-opacity">
+                <img title="J&MDCleanning" src="<?= $static ?>img/icons/icon0.webp" class="h-16 w-auto invert opacity-80 hover:opacity-100 transition-opacity">
             </div>
         </div>
 
@@ -30,13 +30,13 @@
             
             <div class="flex justify-center gap-8">
                 <a href="https://www.facebook.com/profile.php?id=61563778132664" target="_blank" class="hover:scale-125 transition-transform">
-                    <img src="<?= $static ?>img/icons/face-bw.png" alt="Facebook" class="h-8 w-8 invert">
+                    <img src="<?= $static ?>img/icons/face-bw.webp" alt="Facebook" class="h-8 w-8 invert">
                 </a>
                 <a href="https://www.instagram.com/cleannigjmd/" target="_blank" class="hover:scale-125 transition-transform">
-                    <img src="<?= $static ?>img/icons/insta-bw.png" alt="Instagram" class="h-8 w-8 invert">
+                    <img src="<?= $static ?>img/icons/insta-bw.webp" alt="Instagram" class="h-8 w-8 invert">
                 </a>
                 <a href="https://x.com/cleaningJMD7" target="_blank" class="hover:scale-125 transition-transform">
-                    <img src="<?= $static ?>img/icons/twi-bw.png" alt="X" class="h-8 w-8 invert">
+                    <img src="<?= $static ?>img/icons/twi-bw.webp" alt="X" class="h-8 w-8 invert">
                 </a>
             </div>
         </div>

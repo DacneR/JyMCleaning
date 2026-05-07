@@ -85,8 +85,8 @@ $texts = [
 
     // ==================== BANNER ====================
     'banner_image' => [
-        'en' => 'assets/img/banners/bann-en.png',
-        'es' => 'assets/img/banners/bann-es.png'
+        'en' => 'assets/img/banners/bann-en.webp',
+        'es' => 'assets/img/banners/bann-es.webp'
     ],
     'banner_alt' => [
         'en' => 'J&MDCleaning - Contact Us!',

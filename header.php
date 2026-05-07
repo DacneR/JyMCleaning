@@ -4,7 +4,7 @@
             
             <!-- Logo -->
             <div class="flex-shrink-0">
-                <img id="header-icon" title="J&MDCleanning" src="<?= $static ?>img/icons/icon-new.png" class="h-16 w-auto transition-transform hover:scale-110">
+                <img id="header-icon" title="J&MDCleanning" src="<?= $static ?>img/icons/icon-new.webp" class="h-16 w-auto transition-transform hover:scale-110">
             </div>
 
             <!-- Navegación -->

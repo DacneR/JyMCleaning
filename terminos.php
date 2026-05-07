@@ -17,7 +17,7 @@
     
     <link rel="stylesheet" href="<?= $static ?>css/style.css">
 
-    <link rel="icon" href="<?= $static ?>img/icons/icon0.png" type="image/x-icon">
+    <link rel="icon" href="<?= $static ?>img/icons/icon0.webp" type="image/x-icon">
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans selection:bg-orange-100 selection:text-orange-600">
     

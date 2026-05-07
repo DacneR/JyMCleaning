@@ -17,7 +17,7 @@
     
     <link rel="stylesheet" href="<?= $static ?>css/style.css">
 
-    <link rel="icon" href="<?= $static ?>img/icons/icon0.png" type="image/x-icon">
+    <link rel="icon" href="<?= $static ?>img/icons/icon0.webp" type="image/x-icon">
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans selection:bg-orange-100 selection:text-orange-600">
     
@@ -46,21 +46,21 @@
                         'title' => 'Carpet Cleaning',
                         'subtitle' => 'Bring your carpets back to life!',
                         'desc' => 'Our experience of over 20 years allows us to offer a service that removes even the toughest stains without damaging the material. We use advanced techniques that restore original color and texture.',
-                        'img' => 'alfombras.png',
+                        'img' => 'alfombras.webp',
                         'side' => 'left'
                     ],
                     [
                         'title' => 'Furniture Cleaning',
                         'subtitle' => 'Keep your furniture spotless!',
                         'desc' => 'We specialize in deep cleaning of furniture, removing pet hair and difficult residues. Our products clean, protect, and prolong the life of your furniture, restoring comfort.',
-                        'img' => 'muebles.png',
+                        'img' => 'muebles.webp',
                         'side' => 'right'
                     ],
                     [
                         'title' => 'Curtain Cleaning',
                         'subtitle' => 'Refresh with expert care!',
                         'desc' => 'Curtains are key in decor. Our service removes dust, stains, and odors, restoring freshness and original beauty without damaging the delicate fabrics.',
-                        'img' => 'cortinas.png',
+                        'img' => 'cortinas.webp',
                         'side' => 'left'
                     ]
                 ] : [
@@ -68,21 +68,21 @@
                         'title' => 'Lavado de Alfombras',
                         'subtitle' => '¡Devuelva la vida a sus alfombras!',
                         'desc' => 'Nuestra experiencia de más de 20 años nos permite ofrecer un servicio que elimina hasta las manchas más rebeldes sin dañar el material. Restauramos el color y la textura original.',
-                        'img' => 'alfombras.png',
+                        'img' => 'alfombras.webp',
                         'side' => 'left'
                     ],
                     [
                         'title' => 'Lavado de Muebles',
                         'subtitle' => '¡Manténgalos impecables!',
                         'desc' => 'Nos especializamos en limpieza profunda, eliminando pelos de mascotas y residuos difíciles. Nuestros productos protegen y prolongan la vida útil de sus muebles.',
-                        'img' => 'muebles.png',
+                        'img' => 'muebles.webp',
                         'side' => 'right'
                     ],
                     [
                         'title' => 'Lavado de Cortinas',
                         'subtitle' => '¡Cuidado experto para su hogar!',
                         'desc' => 'Las cortinas son clave en la decoración. Nuestro lavado elimina polvo y olores, devolviendo la frescura y belleza original sin dañar las fibras.',
-                        'img' => 'cortinas.png',
+                        'img' => 'cortinas.webp',
                         'side' => 'left'
                     ]
                 ];

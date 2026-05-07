@@ -17,7 +17,7 @@
     
     <link rel="stylesheet" href="<?= $static ?>css/style.css">
 
-    <link rel="icon" href="<?= $static ?>img/icons/icon0.png" type="image/x-icon">
+    <link rel="icon" href="<?= $static ?>img/icons/icon0.webp" type="image/x-icon">
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans selection:bg-orange-100 selection:text-orange-600">
     
@@ -37,7 +37,7 @@
                     </p>
                     <div class="flex justify-center">
                         <div class="rounded-3xl overflow-hidden shadow-lg">
-                            <img src="<?= $static ?>img/cerca/ejemplo.png" alt="<?= $t['about_who_title'] ?>" class="w-full max-w-3xl h-auto">
+                            <img src="<?= $static ?>img/cerca/ejemplo.webp" alt="<?= $t['about_who_title'] ?>" class="w-full max-w-3xl h-auto">
                         </div>
                     </div>
                 </section>
@@ -73,21 +73,21 @@
                         <div class="carousel-inner flex transition-all duration-500">
                             <!-- Item 1 -->
                             <div class="carousel-item active min-w-full flex flex-col items-center text-center space-y-4 p-6">
-                                <img src="<?= $static ?>img/usuarios/usuario3.png" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['about_testimonial1_name'] ?>">
+                                <img src="<?= $static ?>img/usuarios/usuario3.webp" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['about_testimonial1_name'] ?>">
                                 <h3 class="font-bold text-xl text-navy-900"><?= $t['about_testimonial1_name'] ?></h3>
                                 <p class="max-w-md italic text-slate-600"><?= $t['about_testimonial1_text'] ?></p>
                                 <p class="text-orange-500 font-black text-lg">★★★★</p>
                             </div>
                             <!-- Item 2 -->
                             <div class="carousel-item min-w-full flex flex-col items-center text-center space-y-4 p-6">
-                                <img src="<?= $static ?>img/usuarios/usuario4.png" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['about_testimonial2_name'] ?>">
+                                <img src="<?= $static ?>img/usuarios/usuario4.webp" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['about_testimonial2_name'] ?>">
                                 <h3 class="font-bold text-xl text-navy-900"><?= $t['about_testimonial2_name'] ?></h3>
                                 <p class="max-w-md italic text-slate-600"><?= $t['about_testimonial2_text'] ?></p>
                                 <p class="text-orange-500 font-black text-lg">★★★★★</p>
                             </div>
                             <!-- Item 3 -->
                             <div class="carousel-item min-w-full flex flex-col items-center text-center space-y-4 p-6">
-                                <img src="<?= $static ?>img/usuarios/usuario5.png" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['about_testimonial3_name'] ?>">
+                                <img src="<?= $static ?>img/usuarios/usuario5.webp" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['about_testimonial3_name'] ?>">
                                 <h3 class="font-bold text-xl text-navy-900"><?= $t['about_testimonial3_name'] ?></h3>
                                 <p class="max-w-md italic text-slate-600"><?= $t['about_testimonial3_text'] ?></p>
                                 <p class="text-orange-500 font-black text-lg">★★★★</p>

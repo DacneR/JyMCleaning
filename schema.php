@@ -73,7 +73,7 @@ $schema = [
     ],
     'areaServed' => $businessData['servesCities'],
     'priceRange' => $businessData['priceRange'],
-    'image' => 'https://jmdcleaning.com/assets/img/icons/icon0.png',
+    'image' => 'https://jmdcleaning.com/assets/img/icons/icon0.webp',
     'sameAs' => [
         'https://www.facebook.com/jmdcleaning',
         'https://www.instagram.com/jmdcleaning'
