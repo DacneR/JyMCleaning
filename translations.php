@@ -385,8 +385,8 @@ $texts = [
         'es' => 'Descripción del Servicio'
     ],
     'terms_section2_text' => [
-        'en' => 'J&MDCleaning offers professional cleaning services for carpets, furniture, sofas, dining sets, and all types of upholstery. Our goal is to provide a high-quality service to meet our clients\' needs.',
-        'es' => 'Ofrecemos servicios de limpieza profesional para alfombras, muebles, sillones y comedores con más de 20 años de experiencia.'
+        'en' => 'We offer professional cleaning services for carpets, restaurants, and offices with over 20 years of experience.',
+        'es' => 'Ofrecemos servicios de limpieza profesional para alfombras, restaurantes, y oficinas con más de 20 años de experiencia.'
     ],
     'terms_section3_title' => [
         'en' => 'Use of Service',
