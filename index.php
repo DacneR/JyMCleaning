@@ -23,25 +23,9 @@ require_once 'translations.php';
     <link rel="alternate" hreflang="es" href="https://jmdcleaning.com/?lang=es">
     <link rel="alternate" hreflang="x-default" href="https://jmdcleaning.com/">
     
-    <!-- TAILWIND CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navy: { 900: '#001f3f' },
-                        orange: { 500: '#ff851b' }
-                    },
-                    borderRadius: {
-                        '4xl': '2rem',
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="<?= $static ?>css/style.css">
 
-    <link rel="icon" href="<?= $static ?>img/icons/icon-new.png" type="image/x-icon">
+    <link rel="icon" href="<?= $static ?>img/icons/icon0.png" type="image/x-icon">
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans selection:bg-orange-100 selection:text-orange-600">
     

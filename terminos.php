@@ -15,21 +15,7 @@
     <link rel="alternate" hreflang="es" href="https://jmdcleaning.com/terminos.php?lang=es">
     <link rel="alternate" hreflang="x-default" href="https://jmdcleaning.com/terminos.php">
     
-    <!-- TAILWIND CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navy: { 900: '#001f3f' },
-                        orange: { 500: '#ff851b' }
-                    },
-                    borderRadius: { '4xl': '2rem' }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="<?= $static ?>css/style.css">
 
     <link rel="icon" href="<?= $static ?>img/icons/icon0.png" type="image/x-icon">
 </head>
