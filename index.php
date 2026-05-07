@@ -27,7 +27,7 @@ require_once 'translations.php';
 
     <link rel="icon" href="<?= $static ?>img/icons/icon0.webp" type="image/x-icon">
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans selection:bg-orange-100 selection:text-orange-600">
+<body class="bg-muted-slate-900 text-slate-200 font-sans selection:bg-orange-100 selection:text-orange-600">
     
     <div class="flex flex-col min-h-screen">
 
@@ -40,14 +40,23 @@ require_once 'translations.php';
             <div class="flex flex-col space-y-16">
 
                 <!-- Main Banner -->
-                <section class="max-w-5xl mx-auto rounded-3xl shadow-2xl overflow-hidden transition-all duration-500 hover:shadow-orange-500/20 group">
-                    <a href="#contact" class="block overflow-hidden">
-                        <img title="<?= $t['banner_alt'] ?>" alt="<?= $t['banner_alt'] ?>" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" src="<?= $t['banner_image'] ?>">
-                    </a>
-                </section>
+                <div class="relative overflow-hidden rounded-4xl shadow-xl">
+                    <picture>
+                        <source media="(max-width: 767px)" 
+                                srcset="<?= $static ?><?= $t['banner_mobile'] ?>" 
+                                width="750" height="500">
+                        
+                        <img src="<?= $static ?><?= $t['banner_image'] ?>" 
+                            width="1200" height="800" 
+                            alt="<?= $t['banner_alt'] ?>" 
+                            class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105" 
+                            fetchpriority="high" 
+                            decoding="async">
+                    </picture>
+                </div>
 
                 <!-- H1 Local SEO -->
-                <h1 class="text-4xl md:text-5xl font-black text-navy-900 italic uppercase text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-black text-white italic uppercase text-center mb-8">
                     <?= $t['h1_local_seo'] ?>
                 </h1>
 
@@ -56,14 +65,14 @@ require_once 'translations.php';
                     <div class="flex-1 text-lg text-slate-600 leading-relaxed italic border-l-4 border-orange-500 pl-6">
                         <p><?= $t['intro_text'] ?></p>
                     </div>
-                    <img class="h-24 w-24 md:h-32 md:w-32 object-contain hover:rotate-12 transition-transform flex-shrink-0" src="<?= $static ?>img/icons/icon0.webp" alt="J&MD Cleaning Icon">
+                    <img class="h-24 w-24 md:h-32 md:w-32 object-contain hover:rotate-12 transition-transform flex-shrink-0" src="<?= $static ?>img/icons/icon0.webp" width="150" height="144" alt="J&MD Cleaning Icon" loading="lazy" decoding="async">
                 </section>
 
                 <!-- Promotion Section -->
-                <section class="bg-navy-900 text-white p-10 md:p-16 rounded-4xl shadow-2xl relative overflow-hidden group">
+                <section class="bg-muted-slate-900 text-white p-10 md:p-16 rounded-4xl shadow-2xl relative overflow-hidden group">
                     <div class="relative z-10 text-center max-w-2xl mx-auto">
-                        <h2 class="text-3xl md:text-4xl font-black mb-4 tracking-tighter italic uppercase text-orange-500"><?= $t['promo_title'] ?></h2>
-                        <p class="text-slate-300 text-base md:text-lg leading-relaxed"><?= $t['promo_description'] ?></p>
+                        <h2 class="text-3xl md:text-4xl font-black mb-4 tracking-tighter italic uppercase text-orange-400"><?= $t['promo_title'] ?></h2>
+                        <p class="text-slate-200 text-base md:text-lg leading-relaxed"><?= $t['promo_description'] ?></p>
                     </div>
                     <!-- Decoración visual -->
                     <div class="absolute -right-10 -bottom-10 h-40 w-40 bg-orange-500 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
@@ -79,14 +88,14 @@ require_once 'translations.php';
                             <div class="flex flex-col space-y-4 group hover:scale-105 transition-transform duration-300">
                                 <div class="overflow-hidden rounded-2xl shadow-md group-hover:shadow-lg transition-shadow">
                                     <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" 
-                                         src="<?= $static ?>img/principal/alfombraMan.webp" alt="<?= $t['img_carpet_boston_alt'] ?>" loading="lazy">
+                                         src="<?= $static ?>img/principal/alfombraMan.webp" width="612" height="456" alt="<?= $t['img_carpet_boston_alt'] ?>" loading="lazy" decoding="async">
                                 </div>
                                 <div class="space-y-3 text-left">
                                     <h3 class="text-2xl font-bold text-navy-900 italic">Carpet Cleaning</h3>
                                     <ul>
-                                        <li class="flex items-start gap-3" itemprop="itemListElement"><span class="text-orange-500 text-xl flex-shrink-0">■</span> <span class="italic text-slate-600 leading-tight"><?= $t['case_carpet_point1'] ?></span></li>
-                                        <li class="flex items-start gap-3" itemprop="itemListElement"><span class="text-orange-500 text-xl flex-shrink-0">■</span> <span class="italic text-slate-600 leading-tight"><?= $t['case_carpet_point2'] ?></span></li>
-                                        <li class="flex items-start gap-3" itemprop="itemListElement"><span class="text-orange-500 text-xl flex-shrink-0">■</span> <span class="italic text-slate-600 leading-tight"><?= $t['case_carpet_point3'] ?></span></li>
+                                        <li class="flex items-start gap-3" itemprop="itemListElement"><span class="text-orange-700 text-xl flex-shrink-0">■</span> <span class="italic text-slate-700 leading-tight"><?= $t['case_carpet_point1'] ?></span></li>
+                                        <li class="flex items-start gap-3" itemprop="itemListElement"><span class="text-orange-700 text-xl flex-shrink-0">■</span> <span class="italic text-slate-700 leading-tight"><?= $t['case_carpet_point2'] ?></span></li>
+                                        <li class="flex items-start gap-3" itemprop="itemListElement"><span class="text-orange-700 text-xl flex-shrink-0">■</span> <span class="italic text-slate-700 leading-tight"><?= $t['case_carpet_point3'] ?></span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -95,14 +104,14 @@ require_once 'translations.php';
                             <div class="flex flex-col space-y-4 group hover:scale-105 transition-transform duration-300">
                                 <div class="overflow-hidden rounded-2xl shadow-md group-hover:shadow-lg transition-shadow">
                                     <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" 
-                                         src="<?= $static ?>img/principal/mueble.webp" alt="<?= $t['img_furniture_alt'] ?>" loading="lazy">
+                                         src="<?= $static ?>img/principal/mueble.webp" width="376" height="260" alt="<?= $t['img_furniture_alt'] ?>" loading="lazy" decoding="async">
                                 </div>
                                 <div class="space-y-3 text-right">
                                     <h3 class="text-2xl font-bold text-navy-900 italic">Furniture Cleaning</h3>
                                     <ul>
-                                        <li class="flex items-start justify-end gap-3" itemprop="itemListElement"><span class="italic text-slate-600 leading-tight"><?= $t['case_furniture_point1'] ?></span> <span class="text-orange-500 text-xl flex-shrink-0">■</span></li>
-                                        <li class="flex items-start justify-end gap-3" itemprop="itemListElement"><span class="italic text-slate-600 leading-tight"><?= $t['case_furniture_point2'] ?></span> <span class="text-orange-500 text-xl flex-shrink-0">■</span></li>
-                                        <li class="flex items-start justify-end gap-3" itemprop="itemListElement"><span class="italic text-slate-600 leading-tight"><?= $t['case_furniture_point3'] ?></span> <span class="text-orange-500 text-xl flex-shrink-0">■</span></li>
+                                        <li class="flex items-start justify-end gap-3" itemprop="itemListElement"><span class="italic text-slate-700 leading-tight"><?= $t['case_furniture_point1'] ?></span> <span class="text-orange-700 text-xl flex-shrink-0">■</span></li>
+                                        <li class="flex items-start justify-end gap-3" itemprop="itemListElement"><span class="italic text-slate-700 leading-tight"><?= $t['case_furniture_point2'] ?></span> <span class="text-orange-700 text-xl flex-shrink-0">■</span></li>
+                                        <li class="flex items-start justify-end gap-3" itemprop="itemListElement"><span class="italic text-slate-700 leading-tight"><?= $t['case_furniture_point3'] ?></span> <span class="text-orange-700 text-xl flex-shrink-0">■</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -111,30 +120,30 @@ require_once 'translations.php';
                 </section>
 
                 <!-- Testimonials Carousel -->
-                <section class="bg-gradient-to-r from-slate-100 to-slate-50 p-8 md:p-12 rounded-4xl shadow-sm border border-slate-100">
-                    <h2 class="text-3xl font-black text-navy-900 text-center mb-10 italic uppercase"><?= $t['testimonials_title'] ?></h2>
+                <section class="bg-muted-slate-900 p-8 md:p-12 rounded-4xl shadow-xl border border-slate-700">
+                    <h2 class="text-3xl font-black text-white text-center mb-10 italic uppercase"><?= $t['testimonials_title'] ?></h2>
                     <div class="carousel max-w-4xl mx-auto">
                         <div class="carousel-inner flex transition-all duration-500">
                             <!-- Item 1 -->
                             <div class="carousel-item active min-w-full flex flex-col items-center text-center space-y-4 p-6">
-                                <img src="<?= $static ?>img/usuarios/usuario0.webp" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['testimonial1_name'] ?>">
-                                <h3 class="font-bold text-xl text-navy-900"><?= $t['testimonial1_name'] ?></h3>
-                                <p class="max-w-md italic text-slate-600"><?= $t['testimonial1_text'] ?></p>
-                                <p class="text-orange-500 font-black text-lg">★★★★</p>
+                                <img src="<?= $static ?>img/usuarios/usuario0.webp" width="150" height="150" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['testimonial1_name'] ?>" loading="lazy" decoding="async">
+                                <h3 class="font-bold text-xl text-white"><?= $t['testimonial1_name'] ?></h3>
+                                <p class="max-w-md italic text-slate-200"><?= $t['testimonial1_text'] ?></p>
+                                <p class="text-orange-400 font-black text-lg">★★★★</p>
                             </div>
                             <!-- Item 2 -->
                             <div class="carousel-item min-w-full flex flex-col items-center text-center space-y-4 p-6">
-                                <img src="<?= $static ?>img/usuarios/usuario1.webp" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['testimonial2_name'] ?>">
-                                <h3 class="font-bold text-xl text-navy-900"><?= $t['testimonial2_name'] ?></h3>
-                                <p class="max-w-md italic text-slate-600"><?= $t['testimonial2_text'] ?></p>
-                                <p class="text-orange-500 font-black text-lg">★★★★★</p>
+                                <img src="<?= $static ?>img/usuarios/usuario1.webp" width="150" height="150" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['testimonial2_name'] ?>" loading="lazy" decoding="async">
+                                <h3 class="font-bold text-xl text-white"><?= $t['testimonial2_name'] ?></h3>
+                                <p class="max-w-md italic text-slate-200"><?= $t['testimonial2_text'] ?></p>
+                                <p class="text-orange-400 font-black text-lg">★★★★★</p>
                             </div>
                             <!-- Item 3 -->
                             <div class="carousel-item min-w-full flex flex-col items-center text-center space-y-4 p-6">
-                                <img src="<?= $static ?>img/usuarios/usuario2.webp" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['testimonial3_name'] ?>">
-                                <h3 class="font-bold text-xl text-navy-900"><?= $t['testimonial3_name'] ?></h3>
-                                <p class="max-w-md italic text-slate-600"><?= $t['testimonial3_text'] ?></p>
-                                <p class="text-orange-500 font-black text-lg">★★★★</p>
+                                <img src="<?= $static ?>img/usuarios/usuario2.webp" width="150" height="150" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['testimonial3_name'] ?>" loading="lazy" decoding="async">
+                                <h3 class="font-bold text-xl text-white"><?= $t['testimonial3_name'] ?></h3>
+                                <p class="max-w-md italic text-slate-200"><?= $t['testimonial3_text'] ?></p>
+                                <p class="text-orange-400 font-black text-lg">★★★★</p>
                             </div>
                         </div>
                         <div class="carousel-indicators flex justify-center gap-3 mt-8">
@@ -148,27 +157,27 @@ require_once 'translations.php';
                 <!-- Terms and Conditions -->
                 <section class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100">
                     <h2 class="text-3xl font-black text-navy-900 mb-6 italic uppercase"><?= $t['terms_title'] ?></h2>
-                    <p class="text-slate-600 text-lg leading-relaxed italic border-l-4 border-orange-500 pl-6"><?= $t['terms_text'] ?></p>
+                    <p class="text-slate-700 text-lg leading-relaxed italic border-l-4 border-orange-700 pl-6"><?= $t['terms_text'] ?></p>
                 </section>
 
                 <!-- Contact Us -->
                 <section id="contact" class="bg-white rounded-4xl shadow-xl border border-slate-100 overflow-hidden flex flex-col md:flex-row">
                     <div class="bg-orange-500 p-12 text-white flex flex-col justify-center space-y-4 md:w-1/3 hover:bg-orange-600 transition-colors duration-300">
                         <h2 class="text-4xl md:text-5xl font-black italic uppercase leading-none"><?= $t['contact_title'] ?><br><?= $t['contact_title_now'] ?></h2>
-                        <p class="text-orange-100 italic"><?= $t['contact_subtitle'] ?></p>
+                        <p class="text-white font-semibold italic"><?= $t['contact_subtitle'] ?></p>
                     </div>
                     <div class="p-8 md:p-12 flex-1 grid grid-cols-1 sm:grid-cols-2 gap-8 bg-white text-navy-900">
                         <div class="flex items-center gap-4 hover:translate-x-2 transition-transform duration-300 group">
-                            <img class="h-10 w-10 group-hover:scale-110 transition-transform" src="<?= $static ?>img/icons/correo.webp" alt="<?= $t['contact_email_label'] ?>">
+                            <img class="h-10 w-10 group-hover:scale-110 transition-transform" src="<?= $static ?>img/icons/correo.webp" width="512" height="512" alt="<?= $t['contact_email_label'] ?>" loading="lazy" decoding="async">
                             <div>
-                                <p class="text-sm text-slate-500 font-semibold"><?= $t['contact_email_label'] ?></p>
+                                <p class="text-sm text-slate-700 font-semibold"><?= $t['contact_email_label'] ?></p>
                                 <p class="font-black text-sm break-all"><?= $t['contact_email'] ?></p>
                             </div>
                         </div>
                         <div class="flex items-center gap-4 hover:translate-x-2 transition-transform duration-300 group">
-                            <img class="h-10 w-10 group-hover:scale-110 transition-transform" src="<?= $static ?>img/icons/what.webp" alt="<?= $t['contact_whatsapp_label'] ?>">
+                            <img class="h-10 w-10 group-hover:scale-110 transition-transform" src="<?= $static ?>img/icons/what.webp" width="512" height="512" alt="<?= $t['contact_whatsapp_label'] ?>" loading="lazy" decoding="async">
                             <div>
-                                <p class="text-sm text-slate-500 font-semibold"><?= $t['contact_whatsapp_label'] ?></p>
+                                <p class="text-sm text-slate-700 font-semibold"><?= $t['contact_whatsapp_label'] ?></p>
                                 <p class="font-black text-sm break-all"><?= $t['contact_whatsapp'] ?></p>
                             </div>
                         </div>

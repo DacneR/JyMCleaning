@@ -19,7 +19,7 @@
 
     <link rel="icon" href="<?= $static ?>img/icons/icon0.webp" type="image/x-icon">
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans selection:bg-orange-100 selection:text-orange-600">
+<body class="bg-muted-slate-900 text-slate-200 font-sans selection:bg-orange-100 selection:text-orange-600">
     
     <div class="flex flex-col min-h-screen">
         <?php include 'header.php'; ?>
@@ -37,60 +37,60 @@
                     </p>
                     <div class="flex justify-center">
                         <div class="rounded-3xl overflow-hidden shadow-lg">
-                            <img src="<?= $static ?>img/cerca/ejemplo.webp" alt="<?= $t['about_who_title'] ?>" class="w-full max-w-3xl h-auto">
+                            <img src="<?= $static ?>img/cerca/ejemplo.webp" width="436" height="400" alt="<?= $t['about_who_title'] ?>" class="w-full max-w-3xl h-auto" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </section>
 
                 <!-- Misión, Visión y Aspectos (Grid Responsivo) -->
                 <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-navy-900 text-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-transform duration-300 border-t-8 border-orange-500 flex flex-col justify-between">
+                    <div class="bg-muted-slate-900 text-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-transform duration-300 border-t-8 border-orange-500 flex flex-col justify-between">
                         <div class="text-left">
-                            <h2 class="text-2xl font-black italic uppercase mb-4 text-orange-500"><?= $t['about_mission_title'] ?></h2>
-                            <p class="text-slate-300 text-sm leading-relaxed"><?= $t['about_mission_text'] ?></p>
+                            <h2 class="text-2xl font-black italic uppercase mb-4 text-orange-400"><?= $t['about_mission_title'] ?></h2>
+                            <p class="text-slate-200 text-sm leading-relaxed"><?= $t['about_mission_text'] ?></p>
                         </div>
                     </div>
 
                     <div class="bg-white p-8 rounded-3xl shadow-md hover:-translate-y-2 transition-transform duration-300 border-t-8 border-navy-900 flex flex-col justify-between">
                         <div class="text-left">
                             <h2 class="text-2xl font-black italic uppercase mb-4 text-navy-900"><?= $t['about_vision_title'] ?></h2>
-                            <p class="text-slate-600 text-sm leading-relaxed"><?= $t['about_vision_text'] ?></p>
+                            <p class="text-slate-700 text-sm leading-relaxed"><?= $t['about_vision_text'] ?></p>
                         </div>
                     </div>
 
                     <div class="bg-orange-500 text-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-transform duration-300 border-t-8 border-navy-900 flex flex-col justify-between">
                         <div class="text-left">
                             <h2 class="text-2xl font-black italic uppercase mb-4"><?= $t['about_laboral_title'] ?></h2>
-                            <p class="text-orange-50 text-sm leading-relaxed"><?= $t['about_laboral_text'] ?></p>
+                            <p class="text-white text-sm font-medium leading-relaxed"><?= $t['about_laboral_text'] ?></p>
                         </div>
                     </div>
                 </section>
 
                 <!-- Testimonials Carousel -->
-                <section class="bg-gradient-to-r from-slate-100 to-slate-50 p-8 md:p-12 rounded-4xl shadow-sm border border-slate-100">
-                    <h2 class="text-3xl font-black text-navy-900 text-center mb-10 italic uppercase"><?= $t['about_testimonials_title'] ?></h2>
+                <section class="bg-muted-slate-900 p-8 md:p-12 rounded-4xl shadow-xl border border-slate-700">
+                    <h2 class="text-3xl font-black text-white text-center mb-10 italic uppercase"><?= $t['about_testimonials_title'] ?></h2>
                     <div class="carousel max-w-4xl mx-auto">
                         <div class="carousel-inner flex transition-all duration-500">
                             <!-- Item 1 -->
                             <div class="carousel-item active min-w-full flex flex-col items-center text-center space-y-4 p-6">
-                                <img src="<?= $static ?>img/usuarios/usuario3.webp" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['about_testimonial1_name'] ?>">
-                                <h3 class="font-bold text-xl text-navy-900"><?= $t['about_testimonial1_name'] ?></h3>
-                                <p class="max-w-md italic text-slate-600"><?= $t['about_testimonial1_text'] ?></p>
-                                <p class="text-orange-500 font-black text-lg">★★★★</p>
+                                <img src="<?= $static ?>img/usuarios/usuario3.webp" width="150" height="150" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['about_testimonial1_name'] ?>" loading="lazy" decoding="async">
+                                <h3 class="font-bold text-xl text-white"><?= $t['about_testimonial1_name'] ?></h3>
+                                <p class="max-w-md italic text-slate-200"><?= $t['about_testimonial1_text'] ?></p>
+                                <p class="text-orange-400 font-black text-lg">★★★★</p>
                             </div>
                             <!-- Item 2 -->
                             <div class="carousel-item min-w-full flex flex-col items-center text-center space-y-4 p-6">
-                                <img src="<?= $static ?>img/usuarios/usuario4.webp" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['about_testimonial2_name'] ?>">
-                                <h3 class="font-bold text-xl text-navy-900"><?= $t['about_testimonial2_name'] ?></h3>
-                                <p class="max-w-md italic text-slate-600"><?= $t['about_testimonial2_text'] ?></p>
-                                <p class="text-orange-500 font-black text-lg">★★★★★</p>
+                                <img src="<?= $static ?>img/usuarios/usuario4.webp" width="150" height="150" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['about_testimonial2_name'] ?>" loading="lazy" decoding="async">
+                                <h3 class="font-bold text-xl text-white"><?= $t['about_testimonial2_name'] ?></h3>
+                                <p class="max-w-md italic text-slate-200"><?= $t['about_testimonial2_text'] ?></p>
+                                <p class="text-orange-400 font-black text-lg">★★★★★</p>
                             </div>
                             <!-- Item 3 -->
                             <div class="carousel-item min-w-full flex flex-col items-center text-center space-y-4 p-6">
-                                <img src="<?= $static ?>img/usuarios/usuario5.webp" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['about_testimonial3_name'] ?>">
-                                <h3 class="font-bold text-xl text-navy-900"><?= $t['about_testimonial3_name'] ?></h3>
-                                <p class="max-w-md italic text-slate-600"><?= $t['about_testimonial3_text'] ?></p>
-                                <p class="text-orange-500 font-black text-lg">★★★★</p>
+                                <img src="<?= $static ?>img/usuarios/usuario5.webp" width="150" height="150" class="h-24 w-24 rounded-full border-4 border-orange-500 shadow-md object-cover" alt="<?= $t['about_testimonial3_name'] ?>" loading="lazy" decoding="async">
+                                <h3 class="font-bold text-xl text-white"><?= $t['about_testimonial3_name'] ?></h3>
+                                <p class="max-w-md italic text-slate-200"><?= $t['about_testimonial3_text'] ?></p>
+                                <p class="text-orange-400 font-black text-lg">★★★★</p>
                             </div>
                         </div>
                         <div class="carousel-indicators flex justify-center gap-3 mt-8">

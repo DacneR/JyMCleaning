@@ -14,6 +14,9 @@ module.exports = {
         orange: {
           500: '#ff851b',
         },
+        'muted-slate': {
+          900: '#1a202c',
+        },
       },
       borderRadius: {
         '4xl': '2rem',

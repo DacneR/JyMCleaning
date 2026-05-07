@@ -85,8 +85,12 @@ $texts = [
 
     // ==================== BANNER ====================
     'banner_image' => [
-        'en' => 'assets/img/banners/bann-en.webp',
-        'es' => 'assets/img/banners/bann-es.webp'
+        'en' => 'img/banners/bann-en.webp',
+        'es' => 'img/banners/bann-es.webp'
+    ],
+    'banner_mobile' => [ // LLAVE NUEVA
+        'en' => 'img/banners/bann-en-mobile.webp',
+        'es' => 'img/banners/bann-es-mobile.webp'
     ],
     'banner_alt' => [
         'en' => 'J&MDCleaning - Contact Us!',

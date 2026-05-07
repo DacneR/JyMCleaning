@@ -19,7 +19,7 @@
 
     <link rel="icon" href="<?= $static ?>img/icons/icon0.webp" type="image/x-icon">
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans selection:bg-orange-100 selection:text-orange-600">
+<body class="bg-muted-slate-900 text-slate-200 font-sans selection:bg-orange-100 selection:text-orange-600">
     
     <div class="flex flex-col min-h-screen">
         <?php include 'header.php'; ?>
@@ -33,15 +33,15 @@
                     <h1 class="text-1.5xl md:text-5xl font-black text-navy-900 italic uppercase">
                         <?= $language === 'en' ? 'J&MDCleaning Terms & Conditions' : 'Términos y Condiciones J&MDCleaning' ?>
                     </h1>
-                    <p class="text-slate-500 italic"><?= $t['terms_intro'] ?></p>
+                    <p class="text-slate-700 italic"><?= $t['terms_intro'] ?></p>
                 </header>
 
-                <div class="space-y-8 text-slate-600 leading-relaxed">
+                <div class="space-y-8 text-slate-700 leading-relaxed">
                     
                     <!-- Section 1 -->
                     <section>
                         <h2 class="text-xl font-black text-navy-900 uppercase flex items-center gap-3 mb-3">
-                            <span class="text-orange-500">01.</span> <?= $t['terms_section1_title'] ?>
+                            <span class="text-orange-700">01.</span> <?= $t['terms_section1_title'] ?>
                         </h2>
                         <p><?= $t['terms_section1_text'] ?></p>
                     </section>
@@ -49,7 +49,7 @@
                     <!-- Section 2 -->
                     <section>
                         <h2 class="text-xl font-black text-navy-900 uppercase flex items-center gap-3 mb-3">
-                            <span class="text-orange-500">02.</span> <?= $t['terms_section2_title'] ?>
+                            <span class="text-orange-700">02.</span> <?= $t['terms_section2_title'] ?>
                         </h2>
                         <p><?= $t['terms_section2_text'] ?></p>
                     </section>
@@ -61,15 +61,15 @@
                         </h2>
                         <ul class="space-y-4">
                             <li class="flex items-start gap-3 font-medium text-navy-900 text-sm sm:text-base">
-                                <span class="text-orange-500 flex-shrink-0 mt-1">■</span> 
+                                <span class="text-orange-700 flex-shrink-0 mt-1">■</span> 
                                 <span><strong><?= $t['terms_reservation_label'] ?></strong> <?= $t['terms_reservation_text'] ?></span>
                             </li>
                             <li class="flex items-start gap-3 font-medium text-navy-900 text-sm sm:text-base">
-                                <span class="text-orange-500 flex-shrink-0 mt-1">■</span> 
+                                <span class="text-orange-700 flex-shrink-0 mt-1">■</span> 
                                 <span><strong><?= $t['terms_cancellation_label'] ?></strong> <?= $t['terms_cancellation_text'] ?></span>
                             </li>
                             <li class="flex items-start gap-3 font-medium text-navy-900 text-sm sm:text-base">
-                                <span class="text-orange-500 flex-shrink-0 mt-1">■</span> 
+                                <span class="text-orange-700 flex-shrink-0 mt-1">■</span> 
                                 <span><strong><?= $t['terms_access_label'] ?></strong> <?= $t['terms_access_text'] ?></span>
                             </li>
                         </ul>
@@ -78,7 +78,7 @@
                     <!-- Section 4 -->
                     <section>
                         <h2 class="text-xl font-black text-navy-900 uppercase flex items-center gap-3 mb-3">
-                            <span class="text-orange-500">04.</span> <?= $t['terms_section4_title'] ?>
+                            <span class="text-orange-700">04.</span> <?= $t['terms_section4_title'] ?>
                         </h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm italic text-justify">
                             <p><?= $t['terms_data_point1'] ?></p>
@@ -90,7 +90,7 @@
                     <section class="pt-10 border-t border-slate-100 text-center">
                         <p class="text-sm">
                             <?= $t['terms_contact_text'] ?> 
-                            <a href="mailto:jmdcleaning7@gmail.com" class="text-orange-500 font-bold hover:underline">jmdcleaning7@gmail.com</a> 
+                            <a href="mailto:jmdcleaning7@gmail.com" class="text-orange-700 font-bold hover:underline">jmdcleaning7@gmail.com</a> 
                             <?= $t['terms_or'] ?> 
                             <span class="text-navy-900 font-bold">8573968312</span>
                         </p>
