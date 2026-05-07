@@ -107,7 +107,7 @@
         <?php include 'footer.php'; ?>
     </div>
 
-    <script src="<?= $static ?>js/java.js"></script>
+    <script src="<?= $static ?>js/java.js" type="module"></script>
 
     <?php include 'schema.php'; ?>
 

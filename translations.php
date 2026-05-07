@@ -101,6 +101,14 @@ $texts = [
         'en' => 'Carpet Cleaning in Boston, Massachusetts - Professional Service',
         'es' => 'Limpieza de Alfombras en Boston, Massachusetts - Servicio Profesional'
     ],
+    'img_carpet_boston_title' => [
+        'en' => 'Carpet Cleaning',
+        'es' => 'Limpieza de alfombras'
+    ],
+    'img_furniture_title' => [
+        'en' => 'Furniture Cleaning',
+        'es' => 'Limpieza de muebles'
+    ],
     'img_furniture_alt' => [
         'en' => 'Furniture Cleaning in Boston & Cambridge, MA',
         'es' => 'Limpieza de Muebles en Boston y Cambridge, MA'
@@ -202,7 +210,7 @@ $texts = [
     ],
     'testimonial3_text' => [
         'en' => '"Professional and efficient! They removed all the stains from my mattresses."',
-        'es' => '"¡Profesionales y eficientes! Eliminaron todas las manchas de mis colchones."'
+        'es' => '"¡Profesionales y eficientes! Eliminaron todas las manchas de mis oficinas."'
     ],
 
     // ==================== TERMS & CONDITIONS SECTION ====================

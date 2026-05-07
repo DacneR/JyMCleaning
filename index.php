@@ -91,7 +91,7 @@ require_once 'translations.php';
                                          src="<?= $static ?>img/principal/alfombraMan.webp" width="612" height="456" alt="<?= $t['img_carpet_boston_alt'] ?>" loading="lazy" decoding="async">
                                 </div>
                                 <div class="space-y-3 text-left">
-                                    <h3 class="text-2xl font-bold text-navy-900 italic">Carpet Cleaning</h3>
+                                    <h3 class="text-2xl font-bold text-navy-900 italic"><?= $t['img_carpet_boston_title'] ?></h3>
                                     <ul>
                                         <li class="flex items-start gap-3" itemprop="itemListElement"><span class="text-orange-700 text-xl flex-shrink-0">■</span> <span class="italic text-slate-700 leading-tight"><?= $t['case_carpet_point1'] ?></span></li>
                                         <li class="flex items-start gap-3" itemprop="itemListElement"><span class="text-orange-700 text-xl flex-shrink-0">■</span> <span class="italic text-slate-700 leading-tight"><?= $t['case_carpet_point2'] ?></span></li>
@@ -107,7 +107,7 @@ require_once 'translations.php';
                                          src="<?= $static ?>img/principal/mueble.webp" width="376" height="260" alt="<?= $t['img_furniture_alt'] ?>" loading="lazy" decoding="async">
                                 </div>
                                 <div class="space-y-3 text-right">
-                                    <h3 class="text-2xl font-bold text-navy-900 italic">Furniture Cleaning</h3>
+                                    <h3 class="text-2xl font-bold text-navy-900 italic"><?= $t['img_furniture_title'] ?></h3>
                                     <ul>
                                         <li class="flex items-start justify-end gap-3" itemprop="itemListElement"><span class="italic text-slate-700 leading-tight"><?= $t['case_furniture_point1'] ?></span> <span class="text-orange-700 text-xl flex-shrink-0">■</span></li>
                                         <li class="flex items-start justify-end gap-3" itemprop="itemListElement"><span class="italic text-slate-700 leading-tight"><?= $t['case_furniture_point2'] ?></span> <span class="text-orange-700 text-xl flex-shrink-0">■</span></li>
@@ -191,7 +191,7 @@ require_once 'translations.php';
 
     </div>
 
-    <script src="<?= $static ?>js/java.js"></script>
+    <script src="<?= $static ?>js/java.js" type="module"></script>
 
     <?php include 'schema.php'; ?>
 

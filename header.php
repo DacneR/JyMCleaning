@@ -14,7 +14,7 @@
                     <li><a href="acerca.php" class="hover:text-orange-700 transition-colors"><?= $t['nav_about'] ?></a></li>
                     <li><a href="servicios.php" class="hover:text-orange-700 transition-colors"><?= $t['nav_services'] ?></a></li>
                     <li><a href="index.php#contact" class="hover:text-orange-700 transition-colors"><?= $t['nav_contact'] ?></a></li>
-                    <li><a href="terminos.php" class="hover:text-orange-700 transition-colors text-xs md:text-base tracking-tighter md:tracking-normal"><?= $t['nav_terms'] ?></a></li>
+                    <li><a href="terminos.php" class="hover:text-orange-700 transition-colors"><?= $t['nav_terms'] ?></a></li>
                     
                     <!-- Language Switcher -->
                     <?php if ($language === 'en'): ?>
