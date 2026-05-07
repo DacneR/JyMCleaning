@@ -63,12 +63,24 @@ $static = "assets/";
 $texts = [
     // ==================== HEAD & META ====================
     'page_title' => [
-        'en' => 'Home - J&MDcleaning',
-        'es' => 'Inicio - J&MDcleaning'
+        'en' => 'Cleaning Services in Boston & Massachusetts - J&MDcleaning',
+        'es' => 'Servicios de Limpieza en Boston y Massachusetts - J&MDcleaning'
     ],
     'page_description' => [
-        'en' => 'Professional carpet, furniture and upholstery cleaning services in Houston and Hutto, Texas. 20+ years of experience.',
-        'es' => 'Servicios profesionales de limpieza de alfombras, muebles y tapicería en Houston y Hutto, Texas. Más de 20 años de experiencia.'
+        'en' => 'Professional cleaning in Boston, Worcester and Cambridge MA. Carpet, furniture and upholstery cleaning services. 20+ years of experience.',
+        'es' => 'Limpieza profesional en Boston, Worcester y Cambridge MA. Servicios de limpieza de alfombras, muebles y tapicería. Más de 20 años de experiencia.'
+    ],
+    'page_keywords' => [
+        'en' => 'Emergency cleaning Boston, Affordable cleaners Cambridge, same day cleaning Boston MA, affordable cleaning services Cambridge MA, professional cleaners Massachusetts',
+        'es' => 'Limpieza de emergencia en Boston, limpiadores economicos en Cambridge, limpieza el mismo dia Boston MA, servicios de limpieza economicos Cambridge MA, limpieza profesional Massachusetts'
+    ],
+    'geo_cities' => [
+        'en' => 'Boston, Cambridge, Worcester, Springfield, Lowell, Quincy, Brockton',
+        'es' => 'Boston, Cambridge, Worcester, Springfield, Lowell, Quincy, Brockton'
+    ],
+    'h1_local_seo' => [
+        'en' => 'Professional Cleaning Services in Massachusetts',
+        'es' => 'Servicios de Limpieza Profesional en Massachusetts'
     ],
 
     // ==================== BANNER ====================
@@ -80,7 +92,27 @@ $texts = [
         'en' => 'J&MDCleaning - Contact Us!',
         'es' => 'J&MDCleaning - ¡Contactanos!'
     ],
-
+    // ==================== IMAGE ALT TAGS (SEO - Local Keywords) ====================
+    'img_carpet_boston_alt' => [
+        'en' => 'Carpet Cleaning in Boston, Massachusetts - Professional Service',
+        'es' => 'Limpieza de Alfombras en Boston, Massachusetts - Servicio Profesional'
+    ],
+    'img_furniture_alt' => [
+        'en' => 'Furniture Cleaning in Boston & Cambridge, MA',
+        'es' => 'Limpieza de Muebles en Boston y Cambridge, MA'
+    ],
+    'img_carpet_service_alt' => [
+        'en' => 'Professional Carpet Cleaning Service in Massachusetts',
+        'es' => 'Servicio Profesional de Limpieza de Alfombras en Massachusetts'
+    ],
+    'img_furniture_service_alt' => [
+        'en' => 'Expert Furniture & Upholstery Cleaning in Worcester & Boston',
+        'es' => 'Limpieza Experta de Muebles y Tapicería en Worcester y Boston'
+    ],
+    'img_curtain_service_alt' => [
+        'en' => 'Curtain Cleaning Service - Boston, Quincy, Brockton MA',
+        'es' => 'Servicio de Limpieza de Cortinas - Boston, Quincy, Brockton MA'
+    ],
     // ==================== FIRST PRESENTATION ====================
     'intro_text' => [
         'en' => 'At our company, we are dedicated to providing the best cleaning services to meet all your needs. We clean carpets, restaurants, and offices with the utmost dedication and professionalism.',
@@ -245,12 +277,12 @@ $texts = [
 
     // ==================== ABOUT PAGE (ACERCA.PHP) ====================
     'about_page_title' => [
-        'en' => 'About Us - J&MDcleaning',
-        'es' => 'Acerca de - J&MDcleaning'
+        'en' => 'About Us - Professional Cleaning Services in Boston, MA - J&MDcleaning',
+        'es' => 'Acerca de - Servicios de Limpieza Profesional en Boston, MA - J&MDcleaning'
     ],
     'about_page_description' => [
-        'en' => 'Learn about J&MDCleaning: our mission, vision, and commitment to professional cleaning services with 20+ years of experience.',
-        'es' => 'Conoce a J&MDCleaning: nuestra misión, visión y compromiso con servicios de limpieza profesional con más de 20 años de experiencia.'
+        'en' => 'Learn about J&MDCleaning: our mission, vision, and commitment to professional cleaning services in Boston and Massachusetts with 20+ years of experience.',
+        'es' => 'Conoce a J&MDCleaning: nuestra misión, visión y compromiso con servicios de limpieza profesional en Boston y Massachusetts con más de 20 años de experiencia.'
     ],
     'about_who_title' => [
         'en' => 'Who We Are',
@@ -315,12 +347,16 @@ $texts = [
 
     // ==================== SERVICES PAGE (SERVICIOS.PHP) ====================
     'services_page_title' => [
-        'en' => 'Our Services - J&MDcleaning',
-        'es' => 'Nuestros Servicios - J&MDcleaning'
+        'en' => 'Our Services - Cleaning in Boston & Massachusetts - J&MDcleaning',
+        'es' => 'Nuestros Servicios - Limpieza en Boston y Massachusetts - J&MDcleaning'
     ],
     'services_page_subtitle' => [
-        'en' => 'Professional care for your home and business',
-        'es' => 'Cuidado profesional para su hogar y negocio'
+        'en' => 'Professional care for your home and business in Massachusetts',
+        'es' => 'Cuidado profesional para su hogar y negocio en Massachusetts'
+    ],
+    'services_page_keywords' => [
+        'en' => 'Emergency carpet cleaning Boston, Affordable upholstery cleaners Cambridge, furniture cleaning near Boston MA, same day carpet cleaners Cambridge, commercial cleaning services Massachusetts',
+        'es' => 'Limpieza de alfombras de emergencia en Boston, limpieza economica de tapiceria Cambridge, limpieza de muebles cerca de Boston MA, limpieza de alfombras el mismo dia Cambridge, limpieza comercial Massachusetts'
     ],
     'service_carpet_title' => [
         'en' => 'Carpet Cleaning',
@@ -365,8 +401,8 @@ $texts = [
 
     // ==================== TERMS PAGE (TERMINOS.PHP) ====================
     'terms_page_title' => [
-        'en' => 'Terms & Conditions - J&MDcleaning',
-        'es' => 'Términos y Condiciones - J&MDcleaning'
+        'en' => 'Terms & Conditions - Cleaning Services in Boston, MA - J&MDcleaning',
+        'es' => 'Términos y Condiciones - Servicios de Limpieza en Boston, MA - J&MDcleaning'
     ],
     'terms_intro' => [
         'en' => 'By using our services, you agree to comply with the following terms. Please read them carefully.',
@@ -445,6 +481,36 @@ $texts = [
     'footer_copyright' => [
         'en' => '© 2024 J&MD Cleaning is a registered trademark. All rights reserved.',
         'es' => '© 2024 J&MDCleanning es una marca registrada. Todos los derechos reservados.'
+    ],
+
+    // ==================== FOOTER LOCATIONS (Internal Linking for Local SEO) ====================
+    'footer_services_title' => [
+        'en' => 'Service Areas',
+        'es' => 'Áreas de Servicio'
+    ],
+    'footer_city_boston' => [
+        'en' => 'Cleaning in Boston, MA',
+        'es' => 'Limpieza en Boston, MA'
+    ],
+    'footer_city_cambridge' => [
+        'en' => 'Cleaning in Cambridge, MA',
+        'es' => 'Limpieza en Cambridge, MA'
+    ],
+    'footer_city_worcester' => [
+        'en' => 'Cleaning in Worcester, MA',
+        'es' => 'Limpieza en Worcester, MA'
+    ],
+    'footer_city_quincy' => [
+        'en' => 'Cleaning in Quincy, MA',
+        'es' => 'Limpieza en Quincy, MA'
+    ],
+    'footer_city_lowell' => [
+        'en' => 'Cleaning in Lowell, MA',
+        'es' => 'Limpieza en Lowell, MA'
+    ],
+    'footer_city_brockton' => [
+        'en' => 'Cleaning in Brockton, MA',
+        'es' => 'Limpieza en Brockton, MA'
     ],
 ];
 

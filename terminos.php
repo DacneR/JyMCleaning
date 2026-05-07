@@ -6,7 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?= $t['terms_intro'] ?>">
+    <meta name="keywords" content="<?= $t['page_keywords'] ?>">
     <title><?= $t['terms_page_title'] ?></title>
+    
+    <!-- SEO: Canonical & Hreflang Tags -->
+    <link rel="canonical" href="https://jmdcleaning.com/terminos.php<?= strpos($_SERVER['REQUEST_URI'], '?') !== false ? '?lang=' . $language : '' ?>">
+    <link rel="alternate" hreflang="en" href="https://jmdcleaning.com/terminos.php?lang=en">
+    <link rel="alternate" hreflang="es" href="https://jmdcleaning.com/terminos.php?lang=es">
+    <link rel="alternate" hreflang="x-default" href="https://jmdcleaning.com/terminos.php">
     
     <!-- TAILWIND CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -110,5 +117,8 @@
 
         <?php include 'footer.php'; ?>
     </div>
+
+    <?php include 'schema.php'; ?>
+
 </body>
 </html>

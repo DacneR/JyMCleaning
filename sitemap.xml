@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- HOME PAGE - ENGLISH -->
+    <url>
+        <loc>https://jmdcleaning.com/index.php?lang=en</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="es" href="https://jmdcleaning.com/index.php?lang=es"/>
+    </url>
+    
+    <!-- HOME PAGE - SPANISH -->
+    <url>
+        <loc>https://jmdcleaning.com/index.php?lang=es</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jmdcleaning.com/index.php?lang=en"/>
+    </url>
+
+    <!-- HOME PAGE - DEFAULT (X-DEFAULT) -->
+    <url>
+        <loc>https://jmdcleaning.com/</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- ABOUT PAGE - ENGLISH -->
+    <url>
+        <loc>https://jmdcleaning.com/acerca.php?lang=en</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="es" href="https://jmdcleaning.com/acerca.php?lang=es"/>
+    </url>
+
+    <!-- ABOUT PAGE - SPANISH -->
+    <url>
+        <loc>https://jmdcleaning.com/acerca.php?lang=es</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jmdcleaning.com/acerca.php?lang=en"/>
+    </url>
+
+    <!-- ABOUT PAGE - DEFAULT -->
+    <url>
+        <loc>https://jmdcleaning.com/acerca.php</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- SERVICES PAGE - ENGLISH -->
+    <url>
+        <loc>https://jmdcleaning.com/servicios.php?lang=en</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>bi-weekly</changefreq>
+        <priority>0.95</priority>
+        <xhtml:link rel="alternate" hreflang="es" href="https://jmdcleaning.com/servicios.php?lang=es"/>
+    </url>
+
+    <!-- SERVICES PAGE - SPANISH -->
+    <url>
+        <loc>https://jmdcleaning.com/servicios.php?lang=es</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>bi-weekly</changefreq>
+        <priority>0.95</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jmdcleaning.com/servicios.php?lang=en"/>
+    </url>
+
+    <!-- SERVICES PAGE - DEFAULT -->
+    <url>
+        <loc>https://jmdcleaning.com/servicios.php</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>bi-weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <!-- TERMS PAGE - ENGLISH -->
+    <url>
+        <loc>https://jmdcleaning.com/terminos.php?lang=en</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="es" href="https://jmdcleaning.com/terminos.php?lang=es"/>
+    </url>
+
+    <!-- TERMS PAGE - SPANISH -->
+    <url>
+        <loc>https://jmdcleaning.com/terminos.php?lang=es</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jmdcleaning.com/terminos.php?lang=en"/>
+    </url>
+
+    <!-- TERMS PAGE - DEFAULT -->
+    <url>
+        <loc>https://jmdcleaning.com/terminos.php</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+</urlset>

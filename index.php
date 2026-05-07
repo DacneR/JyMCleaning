@@ -14,7 +14,14 @@ require_once 'translations.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?= $t['page_description'] ?>">
+    <meta name="keywords" content="<?= $t['page_keywords'] ?>">
     <title><?= $t['page_title'] ?></title>
+    
+    <!-- SEO: Canonical & Hreflang Tags -->
+    <link rel="canonical" href="https://jmdcleaning.com<?= $_SERVER['REQUEST_URI'] ?>">
+    <link rel="alternate" hreflang="en" href="https://jmdcleaning.com/?lang=en">
+    <link rel="alternate" hreflang="es" href="https://jmdcleaning.com/?lang=es">
+    <link rel="alternate" hreflang="x-default" href="https://jmdcleaning.com/">
     
     <!-- TAILWIND CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -55,6 +62,11 @@ require_once 'translations.php';
                     </a>
                 </section>
 
+                <!-- H1 Local SEO -->
+                <h1 class="text-4xl md:text-5xl font-black text-navy-900 italic uppercase text-center mb-8">
+                    <?= $t['h1_local_seo'] ?>
+                </h1>
+
                 <!-- First Presentation -->
                 <section class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 md:p-12 rounded-4xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                     <div class="flex-1 text-lg text-slate-600 leading-relaxed italic border-l-4 border-orange-500 pl-6">
@@ -83,12 +95,15 @@ require_once 'translations.php';
                             <div class="flex flex-col space-y-4 group hover:scale-105 transition-transform duration-300">
                                 <div class="overflow-hidden rounded-2xl shadow-md group-hover:shadow-lg transition-shadow">
                                     <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" 
-                                         src="<?= $static ?>img/principal/alfombraMan.jpg" alt="<?= $t['case_carpet_image_alt'] ?>">
+                                         src="<?= $static ?>img/principal/alfombraMan.jpg" alt="<?= $t['img_carpet_boston_alt'] ?>" loading="lazy">
                                 </div>
                                 <div class="space-y-3 text-left">
-                                    <p class="flex items-start gap-3"><span class="text-orange-500 text-xl flex-shrink-0">■</span> <span class="italic text-slate-600 leading-tight"><?= $t['case_carpet_point1'] ?></span></p>
-                                    <p class="flex items-start gap-3"><span class="text-orange-500 text-xl flex-shrink-0">■</span> <span class="italic text-slate-600 leading-tight"><?= $t['case_carpet_point2'] ?></span></p>
-                                    <p class="flex items-start gap-3"><span class="text-orange-500 text-xl flex-shrink-0">■</span> <span class="italic text-slate-600 leading-tight"><?= $t['case_carpet_point3'] ?></span></p>
+                                    <h3 class="text-2xl font-bold text-navy-900 italic">Carpet Cleaning</h3>
+                                    <ul>
+                                        <li class="flex items-start gap-3" itemprop="itemListElement"><span class="text-orange-500 text-xl flex-shrink-0">■</span> <span class="italic text-slate-600 leading-tight"><?= $t['case_carpet_point1'] ?></span></li>
+                                        <li class="flex items-start gap-3" itemprop="itemListElement"><span class="text-orange-500 text-xl flex-shrink-0">■</span> <span class="italic text-slate-600 leading-tight"><?= $t['case_carpet_point2'] ?></span></li>
+                                        <li class="flex items-start gap-3" itemprop="itemListElement"><span class="text-orange-500 text-xl flex-shrink-0">■</span> <span class="italic text-slate-600 leading-tight"><?= $t['case_carpet_point3'] ?></span></li>
+                                    </ul>
                                 </div>
                             </div>
 
@@ -96,12 +111,15 @@ require_once 'translations.php';
                             <div class="flex flex-col space-y-4 group hover:scale-105 transition-transform duration-300">
                                 <div class="overflow-hidden rounded-2xl shadow-md group-hover:shadow-lg transition-shadow">
                                     <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" 
-                                         src="<?= $static ?>img/principal/mueble.png" alt="<?= $t['case_furniture_image_alt'] ?>">
+                                         src="<?= $static ?>img/principal/mueble.png" alt="<?= $t['img_furniture_alt'] ?>" loading="lazy">
                                 </div>
                                 <div class="space-y-3 text-right">
-                                    <p class="flex items-start justify-end gap-3"><span class="italic text-slate-600 leading-tight"><?= $t['case_furniture_point1'] ?></span> <span class="text-orange-500 text-xl flex-shrink-0">■</span></p>
-                                    <p class="flex items-start justify-end gap-3"><span class="italic text-slate-600 leading-tight"><?= $t['case_furniture_point2'] ?></span> <span class="text-orange-500 text-xl flex-shrink-0">■</span></p>
-                                    <p class="flex items-start justify-end gap-3"><span class="italic text-slate-600 leading-tight"><?= $t['case_furniture_point3'] ?></span> <span class="text-orange-500 text-xl flex-shrink-0">■</span></p>
+                                    <h3 class="text-2xl font-bold text-navy-900 italic">Furniture Cleaning</h3>
+                                    <ul>
+                                        <li class="flex items-start justify-end gap-3" itemprop="itemListElement"><span class="italic text-slate-600 leading-tight"><?= $t['case_furniture_point1'] ?></span> <span class="text-orange-500 text-xl flex-shrink-0">■</span></li>
+                                        <li class="flex items-start justify-end gap-3" itemprop="itemListElement"><span class="italic text-slate-600 leading-tight"><?= $t['case_furniture_point2'] ?></span> <span class="text-orange-500 text-xl flex-shrink-0">■</span></li>
+                                        <li class="flex items-start justify-end gap-3" itemprop="itemListElement"><span class="italic text-slate-600 leading-tight"><?= $t['case_furniture_point3'] ?></span> <span class="text-orange-500 text-xl flex-shrink-0">■</span></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -181,6 +199,8 @@ require_once 'translations.php';
     </div>
 
     <script src="<?= $static ?>js/java.js"></script>
+
+    <?php include 'schema.php'; ?>
 
 </body>
 </html>

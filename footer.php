@@ -41,6 +41,21 @@
             </div>
         </div>
 
+        <!-- Sección Service Areas: Internal Linking for Local SEO -->
+        <div class="mt-12 border-t border-slate-700 pt-8">
+            <h3 class="text-center text-lg font-bold text-orange-500 italic uppercase tracking-tighter mb-6">
+                <?= $t['footer_services_title'] ?>
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto text-center text-sm">
+                <a href="index.php#contact" class="hover:text-orange-500 transition-colors" title="<?= $t['footer_city_boston'] ?>"><?= $t['footer_city_boston'] ?></a>
+                <a href="index.php#contact" class="hover:text-orange-500 transition-colors" title="<?= $t['footer_city_cambridge'] ?>"><?= $t['footer_city_cambridge'] ?></a>
+                <a href="index.php#contact" class="hover:text-orange-500 transition-colors" title="<?= $t['footer_city_worcester'] ?>"><?= $t['footer_city_worcester'] ?></a>
+                <a href="index.php#contact" class="hover:text-orange-500 transition-colors" title="<?= $t['footer_city_quincy'] ?>"><?= $t['footer_city_quincy'] ?></a>
+                <a href="index.php#contact" class="hover:text-orange-500 transition-colors" title="<?= $t['footer_city_lowell'] ?>"><?= $t['footer_city_lowell'] ?></a>
+                <a href="index.php#contact" class="hover:text-orange-500 transition-colors" title="<?= $t['footer_city_brockton'] ?>"><?= $t['footer_city_brockton'] ?></a>
+            </div>
+        </div>
+
         <!-- Sección Inferior: Copyright -->
         <div class="mt-12 text-center text-xs text-slate-400">
             <p class="max-w-md mx-auto leading-relaxed">

@@ -5,7 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $pageTitle ?></title>
+    <meta name="description" content="<?= $t['services_page_subtitle'] ?>">
+    <meta name="keywords" content="<?= $t['services_page_keywords'] ?>">
+    <title><?= $t['services_page_title'] ?></title>
+    
+    <!-- SEO: Canonical & Hreflang Tags -->
+    <link rel="canonical" href="https://jmdcleaning.com/servicios.php<?= strpos($_SERVER['REQUEST_URI'], '?') !== false ? '?lang=' . $language : '' ?>">
+    <link rel="alternate" hreflang="en" href="https://jmdcleaning.com/servicios.php?lang=en">
+    <link rel="alternate" hreflang="es" href="https://jmdcleaning.com/servicios.php?lang=es">
+    <link rel="alternate" hreflang="x-default" href="https://jmdcleaning.com/servicios.php">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -101,7 +109,8 @@
                         <div class="w-full md:w-1/2 overflow-hidden rounded-4xl shadow-2xl bg-white p-4 border border-slate-100 transition-all duration-500 group-hover:shadow-orange-500/20">
                             <img src="<?= $static ?>img/servicios/<?= $s['img'] ?>" 
                                  alt="<?= $s['title'] ?>" 
-                                 class="w-full h-72 md:h-96 object-cover rounded-3xl transition-transform duration-700 group-hover:scale-105">
+                                 class="w-full h-72 md:h-96 object-cover rounded-3xl transition-transform duration-700 group-hover:scale-105"
+                                 loading="lazy">
                         </div>
 
                         <!-- Texto Informativo -->
@@ -134,5 +143,8 @@
     </div>
 
     <script src="<?= $static ?>js/java.js"></script>
+
+    <?php include 'schema.php'; ?>
+
 </body>
 </html>

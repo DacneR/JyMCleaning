@@ -1,0 +1,25 @@
+# robots.txt for J&MD Cleaning
+# Generated: May 7, 2026
+# Purpose: Allow all crawlers and direct them to sitemap
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Specific rules for common crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Sitemap location (point to sitemap.xml)
+Sitemap: https://jmdcleaning.com/sitemap.xml
+
+# Crawl delay (optional - comment out if not needed)
+# Crawl-delay: 1
